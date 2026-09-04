@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROK-ET - Roket Kulübü</title>
+  <link rel="icon" type="image/png" href="../../cptt.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    :root {
+      --accent: #4670a7;
+      --primary: #031c38;
+      --primary-rgb: 3, 28, 56;
+      --accent-rgb: 70, 112, 167;
+    }
+
+    body { color: var(--primary); background: #fff; }
+
+    .section-dark { background: linear-gradient(135deg, #031c38, #4670a7); }
+    .section-dark .section-header h2 { color: #fff; }
+    .section-dark .section-header p { color: rgba(255,255,255,0.7); }
+    .section-dark .section-divider { background: var(--accent); }
+    .section-dark .sub-team-card,
+    .section-dark .area-card,
+    .section-dark .team-card { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); }
+    .section-dark .sub-team-card h3,
+    .section-dark .area-card h3,
+    .section-dark .team-card h4 { color: #fff; }
+    .section-dark .sub-team-card p,
+    .section-dark .area-card p,
+    .section-dark .team-card p { color: rgba(255,255,255,0.6); }
+
+    .area-card:hover .area-icon { background: var(--accent); }
+    .sub-team-icon { background: rgba(70, 112, 167, 0.15); }
+    .timeline-arrow:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    .join-section { background: #031c38; }
+    .join-section h2 { color: var(--accent); }
+    .join-section h2 span { color: var(--accent); }
+    .join-section p { color: rgba(255,255,255,0.7); }
+    .join-section .join-card { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); }
+    .join-section .join-card h3 { color: #fff; }
+    .join-section .join-card p { color: rgba(255,255,255,0.6); }
+
+    .footer { background: #020e1f; }
+    .footer-links a { color: rgba(255,255,255,0.6); }
+    .footer-links a:hover { color: var(--accent); }
+
+    #achievements .timeline-card { background: rgba(3, 28, 56, 0.04); border-color: rgba(3, 28, 56, 0.12); }
+    #achievements .timeline-body h4 { color: var(--primary); }
+    #achievements .timeline-body p { color: rgba(3, 28, 56, 0.6); }
+
+    #about .about-card { background: rgba(3, 28, 56, 0.04); border-color: rgba(3, 28, 56, 0.12); }
+    #about .about-card h3 { color: var(--primary); }
+
+    #projects .project-card { background: rgba(3, 28, 56, 0.04); border-color: rgba(3, 28, 56, 0.12); }
+    #projects .project-card h3 { color: var(--primary); }
+    #projects .project-card p { color: rgba(3, 28, 56, 0.6); }
+
+    .timeline-badge { text-align: center; display: block; }
+    .timeline-badge img { display: block; margin: 0 auto; width: 48px; height: 48px; object-fit: contain; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="../../index.html"><img src="../../cptt.png" alt="ÇPTT Logo" style="height:36px;width:auto;border-radius:6px;"></a>
+        <span style="color:rgba(251,250,250,0.3);font-size:1.2rem;">|</span>
+        <img src="../../roket.png" alt="Roket" style="height:36px;width:auto;border-radius:6px;">
+        <span>"ROK-ET" &mdash; <span style="color:var(--accent);">Roket Kulübü</span></span>
+      </div>
+      <button class="nav-toggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">Hakkımızda</a></li>
+        <li><a href="#areas">Yarışmalar</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#team">Ekibimiz</a></li>
+        <li><a href="#achievements">Başarılarımız</a></li>
+        <li><a href="#join">Katıl</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-bg-art">
+      <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="250,40 280,160 220,160" stroke="#4670a7" stroke-width="1.5" opacity="0.2" fill="none"/>
+        <polygon points="250,20 260,160 240,160" stroke="#4670a7" stroke-width="1" opacity="0.15" fill="none"/>
+        <rect x="235" y="160" width="30" height="80" rx="4" stroke="#4670a7" stroke-width="1.5" opacity="0.18" fill="none"/>
+        <polygon points="220,240 250,280 280,240" stroke="#4670a7" stroke-width="1.5" opacity="0.18" fill="none"/>
+        <line x1="250" y1="280" x2="250" y2="340" stroke="#4670a7" stroke-width="1.5" opacity="0.12"/>
+        <circle cx="250" cy="345" r="5" stroke="#4670a7" stroke-width="1" opacity="0.15" fill="none"/>
+        <circle cx="250" cy="345" r="15" stroke="#4670a7" stroke-width="0.8" opacity="0.1" fill="none"/>
+        <circle cx="250" cy="345" r="30" stroke="#4670a7" stroke-width="0.6" opacity="0.08" fill="none"/>
+        <circle cx="100" cy="120" r="2" fill="#4670a7" opacity="0.3"/>
+        <circle cx="400" cy="100" r="2" fill="#4670a7" opacity="0.3"/>
+        <circle cx="380" cy="280" r="1.5" fill="#4670a7" opacity="0.25"/>
+        <circle cx="120" cy="300" r="1.5" fill="#4670a7" opacity="0.25"/>
+        <line x1="100" y1="120" x2="160" y2="160" stroke="#4670a7" stroke-width="0.5" opacity="0.1"/>
+        <line x1="400" y1="100" x2="340" y2="140" stroke="#4670a7" stroke-width="0.5" opacity="0.1"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Çapa Fen Lisesi</div>
+        <h1><span class="highlight">"ROK-ET"</span></h1>
+        <div class="hero-subtitle">Roket Kulübü</div>
+        <p>Model roket tasarımı, itki sistemleri ve aviyonik alanlarında çalışarak uzay teknolojilerine ilgi duyan öğrencileri bir araya getiriyoruz.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">Keşfet</a>
+          <a href="#join" class="btn btn-outline">Bize Katıl</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo">
+          <div class="hero-logo-img">
+            <img src="../../roket.png" alt="Roket">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Biz <span>Kimiz?</span></h2>
+        <div class="section-divider"></div>
+        <p>Biz, Çapa Fen Lisesi öğrencilerince kurulan; roket teknolojileri ve mühendislik alanlarında üretim, test ve öğrenim faaliyetleri sürdüren Çapa Rok-Et takımıyız. Amacımız, özgün proje ve yaklaşımlar geliştiren, mühendislik kültürüne sahip bir öğrenci takımı oluşturmaktır.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card fade-in">
+          <h3>Vizyonumuz</h3>
+          <p>Fikrini üretime dönüştüren, ulusal ve uluslararası yarışmalarda okulumuzun adını duyuran, yenilikçi ve örnek bir öğrenci mühendislik takımı olmak. Türkiye'nin üreten bireylerinin yetişmesine katkı sağlamak.</p>
+        </div>
+        <div class="about-card fade-in">
+          <h3>Misyonumuz</h3>
+          <p>Roket teknolojileri alanında mühendislik bilgimizi uygulamalı olarak geliştirmek. Edindiğimiz deneyimle nitelikli çalışmalara imza atmak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Çalışma Alanları -->
+  <section class="section section-dark" id="areas">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Yarışmalar</h2>
+        <div class="section-divider"></div>
+        <p>TEKNOFEST 2027 Roket Yarışması'nda okulumuzu temsil edeceğiz.</p>
+      </div>
+      <div class="areas-grid" style="max-width:500px;margin:0 auto;">
+        <div class="area-card fade-in">
+          <div class="area-icon"><img src="../../Teknofest_logo.png" alt="TEKNOFEST"></div>
+          <h3>TEKNOFEST</h3>
+          <p>Roket Yarışması</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Projelerimiz</h2>
+        <div class="section-divider"></div>
+        <p>Geliştirdiğimiz roket projeleri.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card fade-in" data-modal="modal-rkt-1">
+          <div class="project-image"><img src="../../roket.png" alt="Model Roket"></div>
+          <div class="project-info">
+            <span class="tag">Roket</span>
+            <h3>3 Kademeli Model Roket</h3>
+            <p>1 kilometre irtifaya ulaşabilen, aviyonik donanımlı model roket.</p>
+          </div>
+        </div>
+        <div class="project-card fade-in" data-modal="modal-rkt-2">
+          <div class="project-image"><img src="../../roket.png" alt="Roket Motoru"></div>
+          <div class="project-info">
+            <span class="tag">Motor</span>
+            <h3>Sıvı Yakıtlı Roket Motoru</h3>
+            <p>Amatör sıvı yakıtlı roket motoru geliştirme çalışması.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div class="project-modal-overlay" id="modal-rkt-1">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <img class="project-modal-img" src="../../roket.png" alt="Model Roket">
+      <div class="project-modal-body">
+        <span class="tag">Roket</span>
+        <h2>3 Kademeli Model Roket</h2>
+        <p>1 kilometre irtifaya ulaşabilen, aviyonik donanımlı 3 kademeli model roket geliştiriyoruz.</p>
+        <p>Proje henüz geliştirme aşamasındadır.</p>
+      </div>
+    </div>
+  </div>
+  <div class="project-modal-overlay" id="modal-rkt-2">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <img class="project-modal-img" src="../../roket.png" alt="Roket Motoru">
+      <div class="project-modal-body">
+        <span class="tag">Motor</span>
+        <h2>Sıvı Yakıtlı Roket Motoru</h2>
+        <p>Amatör sıvı yakıtlı roket motoru geliştirme çalışması yürütüyoruz.</p>
+        <p>Proje henüz geliştirme aşamasındadır.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ekibimiz -->
+  <section class="section section-dark" id="team">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Ekibimiz</h2>
+        <div class="section-divider"></div>
+        <p>Dört birimden oluşan ekibimizle roket teknolojileri geliştiriyoruz.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:0 auto;">
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(25% - 15px);min-width:200px;">
+          <div class="sub-team-icon">📡</div>
+          <h3>Aviyonik</h3>
+        </div>
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(25% - 15px);min-width:200px;">
+          <div class="sub-team-icon">🔧</div>
+          <h3>Mekanik</h3>
+        </div>
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(25% - 15px);min-width:200px;">
+          <div class="sub-team-icon">🔬</div>
+          <h3>Ar-Ge ve Destek</h3>
+        </div>
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(25% - 15px);min-width:200px;">
+          <div class="sub-team-icon">💰</div>
+          <h3>Finans</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Başarılarımız</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline-wrapper fade-in">
+        <button class="timeline-arrow timeline-arrow--left" aria-label="Geri">◀</button>
+        <div class="timeline-scroll">
+          <div class="timeline-card" style="min-width:300px;text-align:center;">
+            <div class="timeline-badge">🚀</div>
+            <div class="timeline-body">
+              <h4 style="color:var(--primary);">Başarılarımız Yakında</h4>
+              <p style="color:rgba(3,28,56,0.6);">Yeni başarılar için çalışıyoruz.</p>
+            </div>
+          </div>
+        </div>
+        <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="section" id="sponsors">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Sponsorlar</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div style="text-align:center;padding:60px 0;">
+        <h3 style="color:var(--primary);font-size:1.5rem;margin-bottom:8px;">Yapım Aşamasındadır</h3>
+        <p style="color:rgba(3,28,56,0.6);">Sponsorlarımız hakkında bilgiler yakında burada yer alacak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section class="join-section" id="join">
+    <div class="container">
+      <h2>Sen de <span>katıl</span></h2>
+      <p>Roket teknolojilerine meraklı ve üretime hevesli dostlarımızla beraber çalışmaktan memnuniyet duyarız.</p>
+      <div class="join-grid">
+        <div class="join-card">
+          <div class="join-card-icon">📢</div>
+          <h3>Tanıtım</h3>
+          <p>Okulumuzda düzenlenen tanıtım etkinliklerinde kulübümüz hakkında bilgi sahibi olabilirsin.</p>
+        </div>
+        <div class="join-card">
+          <div class="join-card-icon">🤝</div>
+          <h3>Başvuru</h3>
+          <p>Takım arkadaşlarımızla konuşarak çalışmalarımıza dair bilgi edinebilir, tanışma sürecine katılabilirsin.</p>
+        </div>
+        <div class="join-card">
+          <div class="join-card-icon">📚</div>
+          <h3>Eğitim</h3>
+          <p>Düzenlediğimiz atölyelere katılarak TEKNOFEST projelerine ve üretim aşamalarına dahil olabilirsin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span style="font-size:0.85rem;font-weight:600;">ROK-ET &mdash; Roket Kulübü</span>
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/caparoket/?hl=tr" target="_blank"><img src="../../Instagram_logo_2022.svg" alt="Instagram">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@%C3%87apaProjeTak%C4%B1mlar%C4%B1" target="_blank"><img src="../../YouTube_full-color_icon_(2017).svg.webp" alt="YouTube">YouTube</a></li>
+          <li><a href="mailto:caparoket0@gmail.com"><img src="../../Gmail_icon_(2026).svg.webp" alt="Mail">Mail</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Çapa Proje Takımları Topluluğu &mdash; Roket Kulübü</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      navToggle?.addEventListener('click', () => navLinks.classList.toggle('active'));
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => navLinks.classList.remove('active'));
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      document.querySelectorAll('.timeline-wrapper').forEach(wrapper => {
+        const scroll = wrapper.querySelector('.timeline-scroll');
+        const leftBtn = wrapper.querySelector('.timeline-arrow--left');
+        const rightBtn = wrapper.querySelector('.timeline-arrow--right');
+        leftBtn?.addEventListener('click', () => scroll.scrollBy({ left: -260, behavior: 'smooth' }));
+        rightBtn?.addEventListener('click', () => scroll.scrollBy({ left: 260, behavior: 'smooth' }));
+      });
+
+      // Project modal
+      document.querySelectorAll('.project-card[data-modal]').forEach(card => {
+        card.addEventListener('click', () => {
+          const overlay = document.getElementById(card.getAttribute('data-modal'));
+          if (overlay) overlay.classList.add('active');
+        });
+      });
+      document.querySelectorAll('.project-modal-overlay').forEach(overlay => {
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.classList.remove('active'); });
+      });
+      document.querySelectorAll('.project-modal-close').forEach(btn => {
+        btn.addEventListener('click', () => btn.closest('.project-modal-overlay').classList.remove('active'));
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') document.querySelectorAll('.project-modal-overlay.active').forEach(o => o.classList.remove('active'));
+      });
+    });
+  </script>
+
+</body>
+</html>

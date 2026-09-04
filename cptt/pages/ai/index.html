@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darülmu-AI-limin - Yapay Zeka Kulübü</title>
+  <link rel="icon" type="image/png" href="../../cptt.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    :root {
+      --accent: #622c63;
+      --primary: #9b869d;
+      --primary-rgb: 155, 134, 157;
+      --accent-rgb: 98, 44, 99;
+    }
+
+    body { color: var(--primary); background: #fff; }
+
+    .navbar { background: #3a1a3b; }
+    .navbar .logo span { color: #fff; }
+    .nav-links a { color: rgba(255,255,255,0.7); }
+    .nav-links a:hover { color: #fff; }
+    .hero { background: linear-gradient(135deg, #3a1a3b 0%, #1a0e1b 100%); }
+
+    .section-dark { background: linear-gradient(135deg, #3a1a3b, #622c63); }
+    .section-dark .section-header h2 { color: #fff; }
+    .section-dark .section-header p { color: rgba(255,255,255,0.7); }
+    .section-dark .section-divider { background: var(--accent); }
+    .section-dark .sub-team-card,
+    .section-dark .area-card,
+    .section-dark .team-card { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); }
+    .section-dark .sub-team-card h3,
+    .section-dark .area-card h3,
+    .section-dark .team-card h4 { color: #fff; }
+    .section-dark .sub-team-card p,
+    .section-dark .area-card p,
+    .section-dark .team-card p { color: rgba(255,255,255,0.6); }
+
+    .area-card:hover .area-icon { background: var(--primary); }
+    .sub-team-icon { background: rgba(98, 44, 99, 0.15); }
+    .timeline-arrow:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    .join-section { background: #3a1a3b; }
+    .join-section h2 { color: #fff; }
+    .join-section h2 span { color: var(--accent); }
+    .join-section p { color: rgba(255,255,255,0.7); }
+    .join-section .join-card { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); }
+    .join-section .join-card h3 { color: #fff; }
+    .join-section .join-card p { color: rgba(255,255,255,0.6); }
+
+    .footer { background: #1a0e1b; }
+    .footer-links a { color: rgba(255,255,255,0.6); }
+    .footer-links a:hover { color: var(--accent); }
+    #achievements .timeline-card { background: rgba(98, 44, 99, 0.06); border-color: rgba(98, 44, 99, 0.15); }
+    #achievements .timeline-body h4 { color: var(--primary); }
+    #achievements .timeline-body p { color: rgba(155, 134, 157, 0.7); }
+
+    #about .about-card { background: rgba(98, 44, 99, 0.06); border-color: rgba(98, 44, 99, 0.15); }
+    #about .about-card h3 { color: var(--primary); }
+
+    #projects .project-card { background: rgba(98, 44, 99, 0.04); border-color: rgba(98, 44, 99, 0.12); }
+    #projects .project-card h3 { color: var(--accent); }
+    #projects .project-card p { color: rgba(155, 134, 157, 0.7); }
+
+    .section:not(.section-dark) .section-header h2 { color: var(--accent); }
+    .section:not(.section-dark) .section-header p { color: rgba(98, 44, 99, 0.7); }
+    #about .about-card h3 { color: var(--accent); }
+    #achievements .timeline-body h4 { color: var(--accent); }
+    .timeline-badge { text-align: center; display: block; }
+    .timeline-badge img { display: block; margin: 0 auto; width: 48px; height: 48px; object-fit: contain; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="../../index.html"><img src="../../cptt.png" alt="ÇPTT Logo" style="height:36px;width:auto;border-radius:6px;"></a>
+        <span style="color:rgba(251,250,250,0.3);font-size:1.2rem;">|</span>
+        <img src="../../yz.png" alt="Yapay Zeka Kulübü" style="height:36px;width:auto;border-radius:6px;">
+        <span>"Darülmu-AI-limin" &mdash; <span style="color:#c084d3;">Yapay Zeka Kulübü</span></span>
+      </div>
+      <button class="nav-toggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">Hakkımızda</a></li>
+        <li><a href="#areas">Yarışmalar</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#team">Ekibimiz</a></li>
+        <li><a href="#achievements">Başarılarımız</a></li>
+        <li><a href="#join">Katıl</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-bg-art">
+      <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="80" cy="200" r="5" fill="#c084d3" opacity="0.3"/>
+        <circle cx="160" cy="100" r="4" fill="#c084d3" opacity="0.25"/>
+        <circle cx="180" cy="310" r="4" fill="#c084d3" opacity="0.25"/>
+        <circle cx="260" cy="160" r="5" fill="#c084d3" opacity="0.28"/>
+        <circle cx="280" cy="260" r="4" fill="#c084d3" opacity="0.22"/>
+        <circle cx="370" cy="130" r="3" fill="#c084d3" opacity="0.2"/>
+        <circle cx="380" cy="280" r="3" fill="#c084d3" opacity="0.2"/>
+        <circle cx="440" cy="200" r="4" fill="#c084d3" opacity="0.25"/>
+        <line x1="80" y1="200" x2="160" y2="100" stroke="#c084d3" stroke-width="1" opacity="0.08"/>
+        <line x1="80" y1="200" x2="180" y2="310" stroke="#c084d3" stroke-width="1" opacity="0.08"/>
+        <line x1="160" y1="100" x2="260" y2="160" stroke="#c084d3" stroke-width="1" opacity="0.08"/>
+        <line x1="160" y1="100" x2="370" y2="130" stroke="#c084d3" stroke-width="1" opacity="0.06"/>
+        <line x1="180" y1="310" x2="280" y2="260" stroke="#c084d3" stroke-width="1" opacity="0.08"/>
+        <line x1="180" y1="310" x2="380" y2="280" stroke="#c084d3" stroke-width="1" opacity="0.06"/>
+        <line x1="260" y1="160" x2="280" y2="260" stroke="#c084d3" stroke-width="1" opacity="0.07"/>
+        <line x1="260" y1="160" x2="370" y2="130" stroke="#c084d3" stroke-width="1" opacity="0.07"/>
+        <line x1="260" y1="160" x2="440" y2="200" stroke="#c084d3" stroke-width="1" opacity="0.06"/>
+        <line x1="280" y1="260" x2="380" y2="280" stroke="#c084d3" stroke-width="1" opacity="0.06"/>
+        <line x1="370" y1="130" x2="440" y2="200" stroke="#c084d3" stroke-width="1" opacity="0.06"/>
+        <line x1="380" y1="280" x2="440" y2="200" stroke="#c084d3" stroke-width="1" opacity="0.06"/>
+        <line x1="160" y1="100" x2="280" y2="260" stroke="#c084d3" stroke-width="1" opacity="0.05"/>
+        <line x1="180" y1="310" x2="260" y2="160" stroke="#c084d3" stroke-width="1" opacity="0.05"/>
+        <line x1="80" y1="200" x2="260" y2="160" stroke="#c084d3" stroke-width="1" opacity="0.06"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Çapa Fen Lisesi</div>
+        <h1><span class="highlight">"Darülmu-AI-limin"</span></h1>
+        <div class="hero-subtitle">Yapay Zeka Kulübü</div>
+        <p>Derin öğrenmeden doğal dil işlemeye, bilgisayarlı görüden veri bilimine kadar yapay zekanın her alanında projeler geliştiriyor, geleceğin teknolojilerini bugünden inşa ediyoruz.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">Keşfet</a>
+          <a href="#join" class="btn btn-outline">Bize Katıl</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo">
+          <img src="../../yz.png" alt="Yapay Zeka Kulübü">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Biz <span>Kimiz?</span></h2>
+        <div class="section-divider"></div>
+        <p>Çapa Yapay Zeka Kulübü, Çapa'nın köklü mirasını yapay zeka ile harmanlayan; TEKNOFEST ve TÜBİTAK gibi yarışmalarda çeşitli yapay zeka araçlarını kullanarak geleceğin akıllı sistemlerini geliştiren yenilikçi bir öğrenci topluluğudur.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card fade-in">
+          <h3>Vizyonumuz</h3>
+          <p>Okulumuzu yapay zeka ve inovasyon alanında öncü bir lise topluluğu haline getirmektir. Gençlerin yaratıcı potansiyellerini açığa çıkararak, geleceğin teknolojisini yalnızca tüketen değil, ona yön veren ve üreten lider bireyler yetiştirmektir.</p>
+        </div>
+        <div class="about-card fade-in">
+          <h3>Misyonumuz</h3>
+          <p>Kulübümüz, öğrencilerimize yapay zekanın temel mantığını, kodlama prensiplerini ve veri bilimini öğretmeyi amaçlar. Teorik bilgiyi projeler ve takım çalışmalarıyla hayata geçirerek, üyelerimizin analitik düşünme ve problem çözme yeteneklerini geliştirmeyi hedefler.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Competitions -->
+  <section class="section section-dark" id="areas">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Yarışmalar</h2>
+        <div class="section-divider"></div>
+        <p>Yapay zekanın farklı alt dallarında projeler geliştiriyor, kendimizi sürekli olarak yenilikçi teknolojilerle geliştiriyoruz.</p>
+      </div>
+      <div class="areas-grid">
+        <div class="area-card fade-in">
+          <div class="area-icon"><img src="../../Teknofest_logo.png" alt="TEKNOFEST"></div>
+          <h3>TEKNOFEST</h3>
+          <p>Sağlık, Havacılık ve E-Ticaret kategorilerinde projeler geliştiriyoruz.</p>
+        </div>
+        <div class="area-card fade-in">
+          <div class="area-icon"><img src="../../TÜBİTAK_logo.svg.webp" alt="TÜBİTAK"></div>
+          <h3>TÜBİTAK 2204A</h3>
+          <p>Lise öğrencileri için araştırma projeleri yarışmasına katılıyoruz.</p>
+        </div>
+        <div class="area-card fade-in">
+          <div class="area-icon"><img src="../../TÜBİTAK_logo.svg.webp" alt="TÜBİTAK"></div>
+          <h3>TÜBİTAK 4006B</h3>
+          <p>Okulumuzda düzenlediğimiz bilim fuarlarında projelerimizi sergiliyoruz.</p>
+        </div>
+        <div class="area-card fade-in">
+          <div class="area-icon"><img src="../../robot-logo.png" alt="MEB Robot"></div>
+          <h3>MEB Robot</h3>
+          <p>Milli Eğitim Bakanlığı robot yarışmalarında okulumuzu temsil ediyoruz.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Projelerimiz</h2>
+        <div class="section-divider"></div>
+        <p>Geliştirdiğimiz yapay zeka projeleri.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card fade-in" data-modal="modal-ai-1">
+          <div class="project-image"><img src="../../yz.png" alt="EKG-Tarayıcı"></div>
+          <div class="project-info">
+            <span class="tag">Sağlıkta YZ</span>
+            <h3>EKG-Tarayıcı</h3>
+            <p>12 derivasyonlu EKG sinyallerinden aritmileri tespit eden hibrit derin öğrenme karar destek sistemi.</p>
+          </div>
+        </div>
+        <div class="project-card fade-in" data-modal="modal-ai-2">
+          <div class="project-image"><img src="../../yz.png" alt="Doğal Dil İşleme"></div>
+          <div class="project-info">
+            <span class="tag">NLP</span>
+            <h3>Doğal Dil İşleme Modeli</h3>
+            <p>Türkçe metinleri anlayıp sınıflandıran yapay zeka modeli.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div class="project-modal-overlay" id="modal-ai-1">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <img class="project-modal-img" src="../../yz.png" alt="EKG-Tarayıcı">
+      <div class="project-modal-body">
+        <span class="tag">Sağlıkta YZ</span>
+        <h2>EKG-Tarayıcı: 12-Derivasyonlu EKG Sınıflandırma ve Karar Destek Sistemi</h2>
+        <p>TEKNOFEST 2026 Sağlıkta Yapay Zeka Yarışması kapsamında geliştirilen uçtan uca bir klinik karar destek sistemidir.</p>
+        <p>Geleneksel derin öğrenme tabanlı EKG modelleri sinyalleri 2D spektrogram veya görsel formatlara çevirerek yüksek parametre yükü ve gecikme oluşturur. Bu çalışmada, doğrudan 1 boyutlu zaman serisi (1D Time Series) üzerinde çalışan hibrit bir mimari (ResNet-1D + CBAM + Lead-Transformer) geliştirilmiştir.</p>
+        <p>Sistem; yüksek sınıflandırma başarısının yanı sıra, hastane koşullarında veya taşınabilir EKG cihazlarında milisaniyeler düzeyinde çıkarım yapabilmekte ve klinik güvenilirlik için belirsiz veya dağılım dışı durumlarda Safe-Fail (Unknown) kararı üretebilmektedir.</p>
+        <p><strong>Model Performansı:</strong> Genel Doğruluk %85.3, Macro F1-Score 0.768. 5 hastalık sınıfında (NORMAL, AFIB, AFL, RBBB, LBBB) sınıflandırma yapmaktadır.</p>
+        <p><strong>Mimari:</strong> ResNet-1D (4 Residual Blok) → CBAM 1D (Dikkat Mekanizması) → Pre-LN Transformer Encoder (2 Katman, 4 Başlık) → Sınıflandırıcı. Sigmoid çıkışları ile çoklu etiket desteği sunmaktadır.</p>
+        <p><strong>Safe-Fail / Unknown:</strong> Tanınmayan patolojileri güvenle reddeden negatif çapa mekanizması. Dagilim dışı verilerde yanlış tanıların önüne geçer.</p>
+        <a href="https://github.com/Darulmu-AI-limin/TEKNOFEST2026-SagliktaYZ-PDR" target="_blank" class="github-link">GitHub'da İncele →</a>
+      </div>
+    </div>
+  </div>
+  <div class="project-modal-overlay" id="modal-ai-2">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <img class="project-modal-img" src="../../yz.png" alt="Doğal Dil İşleme">
+      <div class="project-modal-body">
+        <span class="tag">NLP</span>
+        <h2>Doğal Dil İşleme Modeli</h2>
+        <p>Türkçe doğal dil işleme üzerine çalışan bir yapay zeka modeli geliştiriyoruz. Metin sınıflandırma, duygu analizi ve özetleme gibi görevleri yerine getiriyor.</p>
+        <p>Proje henüz geliştirme aşamasındadır.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team -->
+  <section class="section section-dark" id="team">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Ekibimiz</h2>
+        <div class="section-divider"></div>
+        <p>Birlikte öğrenen, birlikte üreten takım arkadaşlarımız.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card fade-in" style="background:rgba(192,132,211,0.08);border-color:rgba(192,132,211,0.2);">
+          <div class="team-avatar" style="background:rgba(192,132,211,0.15);">🚀</div>
+          <h4 style="color:#fff;font-size:1.1rem;">CapaTech Takımı</h4>
+          <p style="color:#fff;font-weight:700;font-size:1.3rem;">6 Kişi</p>
+          <p style="color:rgba(255,255,255,0.5);">AI projeleri ve yarışma hazırlıkları</p>
+        </div>
+        <div class="team-card fade-in" style="background:rgba(192,132,211,0.08);border-color:rgba(192,132,211,0.2);">
+          <div class="team-avatar" style="background:rgba(192,132,211,0.15);">🧠</div>
+          <h4 style="color:#fff;font-size:1.1rem;">Darülmu-AI-limin</h4>
+          <p style="color:#fff;font-weight:700;font-size:1.3rem;">6 Kişi</p>
+          <p style="color:rgba(255,255,255,0.5);">AI projeleri ve yarışma hazırlıkları</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Başarılarımız</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline-wrapper fade-in">
+        <button class="timeline-arrow timeline-arrow--left" aria-label="Geri">◀</button>
+        <div class="timeline-scroll">
+          <div class="timeline-card">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-badge"><img src="../../TÜBİTAK_logo.svg.webp" alt="TÜBİTAK" style="width:48px;height:48px;object-fit:contain;"></div>
+            <div class="timeline-body">
+              <h4>TÜBİTAK 4006B</h4>
+              <p>Bilim Fuarı<br>Sergilenen Proje</p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-badge"><img src="../../TÜBİTAK_logo.svg.webp" alt="TÜBİTAK" style="width:48px;height:48px;object-fit:contain;"></div>
+            <div class="timeline-body">
+              <h4>TÜBİTAK 4006B</h4>
+              <p>Bilim Fuarı<br>Sergilenen Proje</p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-badge"><img src="../../Teknofest_logo.png" alt="TEKNOFEST" style="width:48px;height:48px;object-fit:contain;"></div>
+            <div class="timeline-body">
+              <h4>TEKNOFEST</h4>
+              <p>Doğal Dil İşleme<br>Yarışması Finali</p>
+            </div>
+          </div>
+        </div>
+        <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="section" id="sponsors">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Sponsorlar</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div style="text-align:center;padding:60px 0;">
+        <h3 style="color:var(--primary);font-size:1.5rem;margin-bottom:8px;">Yapım Aşamasındadır</h3>
+        <p style="color:rgba(98,44,99,0.6);">Sponsorlarımız hakkında bilgiler yakında burada yer alacak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section class="join-section" id="join">
+    <div class="container">
+      <h2>Sen de <span>katıl</span></h2>
+      <p>Yapay zekaya meraklı, öğrenmeye ve üretmeye hevesli herkesi aramızda görmekten mutluluk duyarız.</p>
+      <div class="join-grid">
+        <div class="join-card">
+          <div class="join-card-icon">📢</div>
+          <h3>Tanıtım</h3>
+          <p>Okulda düzenlenen tanıtım etkinliklerine katılarak kulübümüzü yakından tanıyabilirsin.</p>
+        </div>
+        <div class="join-card">
+          <div class="join-card-icon">🤝</div>
+          <h3>Tanıtım</h3>
+          <p>Takım üyelerimizle birebir görüşerek projelerimiz ve çalışma düzenimiz hakkında bilgi alabilirsin.</p>
+        </div>
+        <div class="join-card">
+          <div class="join-card-icon">📚</div>
+          <h3>Eğitim</h3>
+          <p>Kulübümüzün düzenlediği eğitim programlarına katılarak yapay zeka alanında kendini geliştirebilirsin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span style="font-size:0.85rem;font-weight:600;">Darülmu-AI-limin &mdash; Yapay Zeka Kulübü</span>
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/darulmuailimin/" target="_blank"><img src="../../Instagram_logo_2022.svg" alt="Instagram" style="width:20px;height:20px;border-radius:4px;margin-right:8px;">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@%C3%87apaProjeTak%C4%B1mlar%C4%B1" target="_blank"><img src="../../YouTube_full-color_icon_(2017).svg.webp" alt="YouTube" style="width:20px;height:20px;border-radius:4px;margin-right:8px;">YouTube</a></li>
+          <li><a href="mailto:capafenlisesiyz@gmail.com"><img src="../../Gmail_icon_(2026).svg.webp" alt="Mail" style="width:20px;height:20px;border-radius:4px;margin-right:8px;">Mail</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Çapa Proje Takımları Topluluğu &mdash; Yapay Zeka Kulübü</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      navToggle?.addEventListener('click', () => navLinks.classList.toggle('active'));
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => navLinks.classList.remove('active'));
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      // Timeline scroll arrows
+      document.querySelectorAll('.timeline-wrapper').forEach(wrapper => {
+        const scroll = wrapper.querySelector('.timeline-scroll');
+        const leftBtn = wrapper.querySelector('.timeline-arrow--left');
+        const rightBtn = wrapper.querySelector('.timeline-arrow--right');
+        leftBtn?.addEventListener('click', () => scroll.scrollBy({ left: -260, behavior: 'smooth' }));
+        rightBtn?.addEventListener('click', () => scroll.scrollBy({ left: 260, behavior: 'smooth' }));
+      });
+
+      // Project modal
+      document.querySelectorAll('.project-card[data-modal]').forEach(card => {
+        card.addEventListener('click', () => {
+          const modalId = card.getAttribute('data-modal');
+          const overlay = document.getElementById(modalId);
+          if (overlay) overlay.classList.add('active');
+        });
+      });
+
+      document.querySelectorAll('.project-modal-overlay').forEach(overlay => {
+        overlay.addEventListener('click', (e) => {
+          if (e.target === overlay) overlay.classList.remove('active');
+        });
+      });
+
+      document.querySelectorAll('.project-modal-close').forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.closest('.project-modal-overlay').classList.remove('active');
+        });
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.project-modal-overlay.active').forEach(o => o.classList.remove('active'));
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

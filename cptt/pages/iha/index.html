@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANKA Takımı - İHA Kulübü</title>
+  <link rel="icon" type="image/png" href="../../cptt.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <style>
+    :root {
+      --accent: #f30406;
+      --primary: #050202;
+      --primary-rgb: 5, 2, 2;
+      --accent-rgb: 243, 4, 6;
+    }
+
+    body { color: var(--primary); background: #fff; }
+
+    .section-dark { background: linear-gradient(135deg, #050202, #1a0000); }
+    .section-dark .section-header h2 { color: #fff; }
+    .section-dark .section-header p { color: rgba(255,255,255,0.7); }
+    .section-dark .section-divider { background: var(--accent); }
+    .section-dark .sub-team-card,
+    .section-dark .area-card,
+    .section-dark .team-card { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); }
+    .section-dark .sub-team-card h3,
+    .section-dark .area-card h3,
+    .section-dark .team-card h4 { color: #fff; }
+    .section-dark .sub-team-card p,
+    .section-dark .area-card p,
+    .section-dark .team-card p { color: rgba(255,255,255,0.6); }
+
+    .area-card:hover .area-icon { background: var(--accent); }
+    .sub-team-icon { background: rgba(243, 4, 6, 0.15); }
+    .timeline-arrow:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    .join-section { background: #050202; }
+    .join-section h2 { color: var(--accent); }
+    .join-section h2 span { color: var(--accent); }
+    .join-section p { color: rgba(255,255,255,0.7); }
+    .join-section .join-card { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); }
+    .join-section .join-card h3 { color: #fff; }
+    .join-section .join-card p { color: rgba(255,255,255,0.6); }
+
+    .footer { background: #0a0101; }
+    .footer-links a { color: rgba(255,255,255,0.6); }
+    .footer-links a:hover { color: var(--accent); }
+    #achievements .timeline-card { background: rgba(5, 2, 2, 0.04); border-color: rgba(5, 2, 2, 0.12); }
+    #achievements .timeline-body h4 { color: var(--primary); }
+    #achievements .timeline-body p { color: rgba(5, 2, 2, 0.6); }
+
+    #about .about-card { background: rgba(5, 2, 2, 0.04); border-color: rgba(5, 2, 2, 0.12); }
+    #about .about-card h3 { color: var(--primary); }
+
+    #projects .project-card { background: rgba(5, 2, 2, 0.04); border-color: rgba(5, 2, 2, 0.12); }
+    #projects .project-card h3 { color: var(--primary); }
+    #projects .project-card p { color: rgba(5, 2, 2, 0.6); }
+    .timeline-badge { text-align: center; display: block; }
+    .timeline-badge img { display: block; margin: 0 auto; width: 48px; height: 48px; object-fit: contain; }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="../../index.html"><img src="../../cptt.png" alt="ÇPTT Logo" style="height:36px;width:auto;border-radius:6px;"></a>
+        <span style="color:rgba(251,250,250,0.3);font-size:1.2rem;">|</span>
+        <img src="../../iha.png" alt="İHA Kulübü" style="height:36px;width:auto;border-radius:6px;">
+        <span>"ANKA Takımı" &mdash; <span style="color:var(--accent);">İHA Kulübü</span></span>
+      </div>
+      <button class="nav-toggle" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">Hakkımızda</a></li>
+        <li><a href="#areas">Yarışmalar</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#team">Ekibimiz</a></li>
+        <li><a href="#achievements">Başarılarımız</a></li>
+        <li><a href="#join">Katıl</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-bg-art">
+      <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="180" r="30" stroke="#f50405" stroke-width="1" opacity="0.12"/>
+        <circle cx="250" cy="180" r="70" stroke="#f50405" stroke-width="1" opacity="0.1"/>
+        <circle cx="250" cy="180" r="120" stroke="#f50405" stroke-width="1" opacity="0.08"/>
+        <circle cx="250" cy="180" r="170" stroke="#f50405" stroke-width="1" opacity="0.05"/>
+        <line x1="250" y1="0" x2="250" y2="400" stroke="#f50405" stroke-width="1" opacity="0.07"/>
+        <line x1="0" y1="180" x2="500" y2="180" stroke="#f50405" stroke-width="1" opacity="0.07"/>
+        <circle cx="250" cy="180" r="3" fill="#f50405" opacity="0.15"/>
+      </svg>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Çapa Fen Lisesi</div>
+        <h1><span class="highlight">"ANKA Takımı"</span></h1>
+        <div class="hero-subtitle">İHA Kulübü</div>
+        <p>İnsansız hava araçları tasarlıyor, üretiyor ve otonom uçuş sistemleri geliştiriyoruz. Aviyonikten pilotaja, mekanikten yazılıma her alanda projeler üretiyoruz.</p>
+        <div class="hero-buttons">
+          <a href="#about" class="btn btn-primary">Keşfet</a>
+          <a href="#join" class="btn btn-outline">Bize Katıl</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-logo">
+          <img src="../../iha.png" alt="İHA Kulübü">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Biz <span>Kimiz?</span></h2>
+        <div class="section-divider"></div>
+        <p>Biz, 2021 yılından beri Çapa Fen Lisesi bünyesinde havacılık alanında çalışan ve insansız hava araçları üreten ANKA Takımıyız. Kurulduğumuz günden bugüne onlarca uçak ve yüzlerce uçuş yapmanın yanı sıra birçok etkinlik ve yarışmada okulumuzu temsil ettik.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card fade-in">
+          <h3>Vizyonumuz</h3>
+          <p>Havacılık ve savunma sanayii alanında gelişen ülkemizin gelecekteki mühendis ve havacıları olarak başarılı çalışmalara imza atmak. Çapa adını her yarışmada en yükseğe taşımak.</p>
+        </div>
+        <div class="about-card fade-in">
+          <h3>Misyonumuz</h3>
+          <p>Yüksek teknolojiye sahip, verimli ve özgün insansız hava araçları tasarlayarak ulusal/uluslararası yarışmalarda zirvede yer almak. Ülkeye değer katacak mühendisler yetişmesine fayda sağlamak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Çalışma Alanları -->
+  <section class="section section-dark" id="areas">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Yarışmalar</h2>
+        <div class="section-divider"></div>
+        <p>TEKNOFEST Liseler Arası İHA Yarışması ve Uluslararası MEB Robot Yarışması'nda okulumuzu temsil ediyoruz.</p>
+      </div>
+      <div class="areas-grid">
+        <div class="area-card fade-in">
+          <div class="area-icon"><img src="../../Teknofest_logo.png" alt="TEKNOFEST"></div>
+          <h3>TEKNOFEST</h3>
+          <p>Liseler Arası İHA Yarışması</p>
+        </div>
+        <div class="area-card fade-in">
+          <div class="area-icon"><img src="../../robot-logo.png" alt="MEB Robot"></div>
+          <h3>MEB Robot</h3>
+          <p>Uluslararası MEB Robot Yarışması – RC Sabit Kanat Kategorisi</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Projelerimiz</h2>
+        <div class="section-divider"></div>
+        <p>Geliştirdiğimiz İHA projeleri.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card fade-in" data-modal="modal-iha-1">
+          <div class="project-image"><img src="../../iha.png" alt="Otonom İHA"></div>
+          <div class="project-info">
+            <span class="tag">İHA</span>
+            <h3>Otonom Tarama Drone'u</h3>
+            <p>GPS ve bilgisayarlı görü ile otonom uçuş yapabilen sabit kanat İHA.</p>
+          </div>
+        </div>
+        <div class="project-card fade-in" data-modal="modal-iha-2">
+          <div class="project-image"><img src="../../iha.png" alt="Katlanabilir İHA"></div>
+          <div class="project-info">
+            <span class="tag">İHA</span>
+            <h3>Katlanabilir İHA</h3>
+            <p>Kolay taşıma için katlanabilir kanat yapısına sahip insansız hava aracı.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Modals -->
+  <div class="project-modal-overlay" id="modal-iha-1">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <img class="project-modal-img" src="../../iha.png" alt="Otonom İHA">
+      <div class="project-modal-body">
+        <span class="tag">İHA</span>
+        <h2>Otonom Tarama Drone'u</h2>
+        <p>GPS navigasyonu ve bilgisayarlı görü teknolojilerini kullanarak otonom uçuş yapabilen bir sabit kanat İHA geliştiriyoruz.</p>
+        <p>Proje henüz geliştirme aşamasındadır.</p>
+      </div>
+    </div>
+  </div>
+  <div class="project-modal-overlay" id="modal-iha-2">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <img class="project-modal-img" src="../../iha.png" alt="Katlanabilir İHA">
+      <div class="project-modal-body">
+        <span class="tag">İHA</span>
+        <h2>Katlanabilir İHA</h2>
+        <p>Kolay taşıma ve depolama için katlanabilir kanat yapısına sahip insansız hava aracı tasarlıyoruz.</p>
+        <p>Proje henüz geliştirme aşamasındadır.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ekibimiz -->
+  <section class="section section-dark" id="team">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Ekibimiz</h2>
+        <div class="section-divider"></div>
+        <p>Beş ana branşta uzmanlaşarak İHA'mızı sıfırdan inşa ediyoruz.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:0 auto;">
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;">
+          <div class="sub-team-icon">🔧</div>
+          <h3>Mekanik</h3>
+        </div>
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;">
+          <div class="sub-team-icon">🎮</div>
+          <h3>Pilotaj</h3>
+        </div>
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;">
+          <div class="sub-team-icon">⚡</div>
+          <h3>Aviyonik</h3>
+        </div>
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;">
+          <div class="sub-team-icon">📱</div>
+          <h3>Sosyal Medya</h3>
+        </div>
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;">
+          <div class="sub-team-icon">💰</div>
+          <h3>Finans</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Başarılarımız</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="timeline-wrapper fade-in">
+        <button class="timeline-arrow timeline-arrow--left" aria-label="Geri">◀</button>
+        <div class="timeline-scroll">
+          <div class="timeline-card">
+            <div class="timeline-year">2026</div>
+            <div class="timeline-badge"><img src="../../robot-logo.png" alt="MEB Robot" style="width:48px;height:48px;object-fit:contain;"></div>
+            <div class="timeline-body">
+              <h4>MEB Robot Yarışması</h4>
+              <p>18. Uluslararası MEB Robot Yarışması<br>RC Sabit Kanat – Finalist</p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-badge"><img src="../../robot-logo.png" alt="MEB Robot" style="width:48px;height:48px;object-fit:contain;"></div>
+            <div class="timeline-body">
+              <h4>MEB Robot Yarışması</h4>
+              <p>16. Uluslararası MEB Robot Yarışması<br>RC Sabit Kanat – 4.</p>
+            </div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-badge"><img src="../../Teknofest_logo.png" alt="TEKNOFEST" style="width:48px;height:48px;object-fit:contain;"></div>
+            <div class="timeline-body">
+              <h4>TEKNOFEST</h4>
+              <p>Liseler Arası İHA Yarışması<br>Finalist</p>
+            </div>
+          </div>
+        </div>
+        <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsors -->
+  <section class="section" id="sponsors">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2>Sponsorlar</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div style="text-align:center;padding:60px 0;">
+        <h3 style="color:var(--primary);font-size:1.5rem;margin-bottom:8px;">Yapım Aşamasındadır</h3>
+        <p style="color:rgba(5,2,2,0.6);">Sponsorlarımız hakkında bilgiler yakında burada yer alacak.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section class="join-section" id="join">
+    <div class="container">
+      <h2>Sen de <span>katıl</span></h2>
+      <p>İHA'ya meraklı, öğrenmeye ve üretmeye hevesli herkesi aramızda görmekten mutluluk duyarız.</p>
+      <div class="join-grid">
+        <div class="join-card">
+          <div class="join-card-icon">📢</div>
+          <h3>Duyuru</h3>
+          <p>Üyelerimiz tarafından okulda ve sosyal medyada yapılan duyurularla çalışmalarımız hakkında bilgi alabilirsin.</p>
+        </div>
+        <div class="join-card">
+          <div class="join-card-icon">🤝</div>
+          <h3>Tanışma</h3>
+          <p>Takım üyelerimizle iletişime geçerek tanışabilir ve üye olarak aramıza katılabilirsin.</p>
+        </div>
+        <div class="join-card">
+          <div class="join-card-icon">📚</div>
+          <h3>Eğitim</h3>
+          <p>Seçtiğin departmana göre verilen eğitimler sayesinde alanında bilgi sahibi olabilir ve projelerimizi geliştirme aşamasına dahil olabilirsin.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span style="font-size:0.85rem;font-weight:600;">ANKA Takımı &mdash; İHA Kulübü</span>
+        <ul class="footer-links">
+          <li><a href="https://www.instagram.com/anka_takimi?igsh=OXdid3J2dTVtcTNj" target="_blank"><img src="../../Instagram_logo_2022.svg" alt="Instagram">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@ankatakm9989" target="_blank"><img src="../../YouTube_full-color_icon_(2017).svg.webp" alt="YouTube">YouTube</a></li>
+          <li><a href="mailto:ankatakimi1848@gmail.com"><img src="../../Gmail_icon_(2026).svg.webp" alt="Mail">Mail</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Çapa Proje Takımları Topluluğu &mdash; İHA Kulübü</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      navToggle?.addEventListener('click', () => navLinks.classList.toggle('active'));
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.addEventListener('click', () => navLinks.classList.remove('active'));
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      }, { threshold: 0.1 });
+
+      document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+      // Timeline scroll arrows
+      document.querySelectorAll('.timeline-wrapper').forEach(wrapper => {
+        const scroll = wrapper.querySelector('.timeline-scroll');
+        const leftBtn = wrapper.querySelector('.timeline-arrow--left');
+        const rightBtn = wrapper.querySelector('.timeline-arrow--right');
+        leftBtn?.addEventListener('click', () => scroll.scrollBy({ left: -260, behavior: 'smooth' }));
+        rightBtn?.addEventListener('click', () => scroll.scrollBy({ left: 260, behavior: 'smooth' }));
+      });
+
+      // Project modal
+      document.querySelectorAll('.project-card[data-modal]').forEach(card => {
+        card.addEventListener('click', () => {
+          const overlay = document.getElementById(card.getAttribute('data-modal'));
+          if (overlay) overlay.classList.add('active');
+        });
+      });
+      document.querySelectorAll('.project-modal-overlay').forEach(overlay => {
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.classList.remove('active'); });
+      });
+      document.querySelectorAll('.project-modal-close').forEach(btn => {
+        btn.addEventListener('click', () => btn.closest('.project-modal-overlay').classList.remove('active'));
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') document.querySelectorAll('.project-modal-overlay.active').forEach(o => o.classList.remove('active'));
+      });
+    });
+  </script>
+
+</body>
+</html>
