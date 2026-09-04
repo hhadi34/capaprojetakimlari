@@ -95,7 +95,7 @@
         <p>Her biri kendi alanında uzmanlaşan beş farklı takımda sen de yerini alabilirsin.</p>
       </div>
       <div class="teams-grid">
-        <a href="pages/ai/index.html" class="team-card fade-in">
+        <a href="/darulmu-AI-limin" class="team-card fade-in">
           <div class="team-icon">
             <img src="yz.png" alt="Yapay Zeka">
           </div>
@@ -103,7 +103,7 @@
           <h3>Yapay Zeka Kulübü</h3>
           <p>Derin öğrenme, doğal dil işleme ve bilgisayarlı görü alanlarında projeler geliştiriyoruz.</p>
         </a>
-        <a href="pages/iha/index.html" class="team-card fade-in">
+        <a href="/anka" class="team-card fade-in">
           <div class="team-icon">
             <img src="iha.png" alt="İHA">
           </div>
@@ -111,7 +111,7 @@
           <h3>İHA Kulübü</h3>
           <p>İnsansız hava araçları tasarlıyor, üretiyor ve otonom uçuş sistemleri geliştiriyoruz.</p>
         </a>
-        <a href="pages/roket/index.html" class="team-card fade-in">
+        <a href="/rok-et" class="team-card fade-in">
           <div class="team-icon">
             <img src="roket.png" alt="Roket">
           </div>
@@ -119,7 +119,7 @@
           <h3>Roket Kulübü</h3>
           <p>Model roket tasarımı, itki sistemleri ve aviyonik alanında çalışmalar yürütüyoruz.</p>
         </a>
-        <a href="pages/oyun/index.html" class="team-card fade-in">
+        <a href="https://abragames.huseyinlab.xyz/landing" class="team-card fade-in">
           <div class="team-icon">
             <img src="abragames.jpg" alt="Abra Games" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
           </div>
@@ -127,7 +127,7 @@
           <h3>Oyun Geliştirme Kulübü</h3>
           <p>Unity ve Unreal Engine ile 2D/3D oyunlar tasarlıyor, game jam'lere katılıyoruz.</p>
         </a>
-        <a href="pages/frc/index.html" class="team-card fade-in">
+        <a href="/frc" class="team-card fade-in">
           <div class="team-icon">
             <img src="frc.jpeg" alt="FRC" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
           </div>
@@ -149,11 +149,11 @@
       </div>
       <div class="projects-grid">
         <div class="project-card fade-in" data-modal="modal-main-1">
-          <div class="project-image"><img src="yz.png" alt="YZ Projesi"></div>
+          <div class="project-image"><img src="yz.png" alt="EKG-Tarayıcı"></div>
           <div class="project-info">
-            <span class="tag">Yapay Zeka</span>
-            <h3>Görüntü İşleme Tabanlı Sıralama Sistemi</h3>
-            <p>Nesne tanıma ile geri dönüşüm atıklarını otomatik sınıflandıran sistem.</p>
+            <span class="tag">Sağlıkta YZ</span>
+            <h3>EKG-Tarayıcı</h3>
+            <p>12 derivasyonlu EKG sinyallerinden aritmileri tespit eden hibrit derin öğrenme karar destek sistemi.</p>
           </div>
         </div>
         <div class="project-card fade-in" data-modal="modal-main-2">
@@ -180,12 +180,15 @@
   <div class="project-modal-overlay" id="modal-main-1">
     <div class="project-modal">
       <button class="project-modal-close">&times;</button>
-      <img class="project-modal-img" src="yz.png" alt="YZ Projesi">
+      <img class="project-modal-img" src="yz.png" alt="EKG-Tarayıcı">
       <div class="project-modal-body">
-        <span class="tag">Yapay Zeka</span>
-        <h2>Görüntü İşleme Tabanlı Sıralama Sistemi</h2>
-        <p>Nesne tanıma ve bilgisayarlı görü teknolojilerini kullanarak geri dönüşüm atıklarını otomatik olarak tanımlayan ve sınıflandıran bir sistem geliştiriyoruz.</p>
-        <p>Derin öğrenme modelleri eğitilerek gerçek zamanlı çalışabilen bir sıralama sistemi hedeflenmektedir.</p>
+        <span class="tag">Sağlıkta YZ</span>
+        <h2>EKG-Tarayıcı: 12-Derivasyonlu EKG Sınıflandırma ve Karar Destek Sistemi</h2>
+        <p>TEKNOFEST 2026 Sağlıkta Yapay Zeka Yarışması kapsamında geliştirilen uçtan uca bir klinik karar destek sistemidir.</p>
+        <p>Geleneksel derin öğrenme tabanlı EKG modelleri sinyalleri 2D spektrogram veya görsel formatlara çevirerek yüksek parametre yükü ve gecikme oluşturur. Bu çalışmada, doğrudan 1 boyutlu zaman serisi (1D Time Series) üzerinde çalışan hibrit bir mimari (ResNet-1D + CBAM + Lead-Transformer) geliştirilmiştir.</p>
+        <p>Sistem; yüksek sınıflandırma başarısının yanı sıra, hastane koşullarında veya taşınabilir EKG cihazlarında milisaniyeler düzeyinde çıkarım yapabilmekte ve klinik güvenilirlik için belirsiz veya dağılım dışı durumlarda Safe-Fail (Unknown) kararı üretebilmektedir.</p>
+        <p><strong>Model Performansı:</strong> Genel Doğruluk %85.3, Macro F1-Score 0.768.</p>
+        <a href="https://github.com/Darulmu-AI-limin/TEKNOFEST2026-SagliktaYZ-PDR" target="_blank" class="github-link">GitHub'da İncele →</a>
       </div>
     </div>
   </div>
@@ -215,15 +218,15 @@
   </div>
 
   <!-- Sponsors -->
-  <section class="section" id="sponsors">
+  <section class="section section-dark" id="sponsors">
     <div class="container">
       <div class="section-header fade-in">
         <h2>Sponsorlar</h2>
         <div class="section-divider"></div>
       </div>
       <div style="text-align:center;padding:60px 0;">
-        <h3 style="color:var(--primary);font-size:1.5rem;margin-bottom:8px;">Yapım Aşamasındadır</h3>
-        <p style="color:rgba(16,30,60,0.6);">Sponsorlarımız hakkında bilgiler yakında burada yer alacak.</p>
+        <h3 style="color:var(--light);font-size:1.5rem;margin-bottom:8px;">Yapım Aşamasındadır</h3>
+        <p style="color:rgba(var(--light-rgb),0.6);">Sponsorlarımız hakkında bilgiler yakında burada yer alacak.</p>
       </div>
     </div>
   </section>
@@ -393,11 +396,11 @@
         <div>
           <h4>Takımlar</h4>
           <ul class="footer-links">
-            <li><a href="pages/ai/index.html">Yapay Zeka Kulübü</a></li>
-            <li><a href="pages/iha/index.html">İHA Kulübü</a></li>
-            <li><a href="pages/roket/index.html">Roket Kulübü</a></li>
-            <li><a href="pages/oyun/index.html">Oyun Geliştirme Kulübü</a></li>
-            <li><a href="pages/frc/index.html">FRC Kulübü</a></li>
+            <li><a href="/darulmu-AI-limin">Yapay Zeka Kulübü</a></li>
+            <li><a href="/anka">İHA Kulübü</a></li>
+            <li><a href="/rok-et">Roket Kulübü</a></li>
+            <li><a href="/abra">Oyun Geliştirme Kulübü</a></li>
+            <li><a href="/frc">FRC Kulübü</a></li>
           </ul>
         </div>
         <div>

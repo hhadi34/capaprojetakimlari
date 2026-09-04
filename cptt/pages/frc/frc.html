@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abra Games - Abra Studio</title>
+  <title>Çapa Pineapple Robotics - FRC Kulübü</title>
   <link rel="icon" type="image/png" href="../../cptt.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,15 +11,15 @@
   <link rel="stylesheet" href="../../css/style.css">
   <style>
     :root {
-      --accent: #b70202;
-      --primary: #1e1312;
-      --primary-rgb: 30, 19, 18;
-      --accent-rgb: 183, 2, 2;
+      --accent: #be9940;
+      --primary: #b81a2b;
+      --primary-rgb: 184, 26, 43;
+      --accent-rgb: 190, 153, 64;
     }
 
     body { color: var(--primary); background: #fff; }
 
-    .section-dark { background: linear-gradient(135deg, #1e1312, #b70202); }
+    .section-dark { background: linear-gradient(135deg, #b81a2b, #be9940); }
     .section-dark .section-header h2 { color: #fff; }
     .section-dark .section-header p { color: rgba(255,255,255,0.7); }
     .section-dark .section-divider { background: var(--accent); }
@@ -34,10 +34,10 @@
     .section-dark .team-card p { color: rgba(255,255,255,0.6); }
 
     .area-card:hover .area-icon { background: var(--accent); }
-    .sub-team-icon { background: rgba(183, 2, 2, 0.15); }
+    .sub-team-icon { background: rgba(190, 153, 64, 0.15); }
     .timeline-arrow:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-    .join-section { background: #1e1312; }
+    .join-section { background: #b81a2b; }
     .join-section h2 { color: var(--accent); }
     .join-section h2 span { color: var(--accent); }
     .join-section p { color: rgba(255,255,255,0.7); }
@@ -45,20 +45,21 @@
     .join-section .join-card h3 { color: #fff; }
     .join-section .join-card p { color: rgba(255,255,255,0.6); }
 
-    .footer { background: #0f0a09; }
+    .footer { background: #8c1420; }
     .footer-links a { color: rgba(255,255,255,0.6); }
     .footer-links a:hover { color: var(--accent); }
+    .btn-primary { background: var(--accent); color: var(--primary); }
 
-    #achievements .timeline-card { background: rgba(30, 19, 18, 0.04); border-color: rgba(30, 19, 18, 0.12); }
+    #achievements .timeline-card { background: rgba(184, 26, 43, 0.04); border-color: rgba(184, 26, 43, 0.12); }
     #achievements .timeline-body h4 { color: var(--primary); }
-    #achievements .timeline-body p { color: rgba(30, 19, 18, 0.6); }
+    #achievements .timeline-body p { color: rgba(184, 26, 43, 0.6); }
 
-    #about .about-card { background: rgba(30, 19, 18, 0.04); border-color: rgba(30, 19, 18, 0.12); }
+    #about .about-card { background: rgba(184, 26, 43, 0.04); border-color: rgba(184, 26, 43, 0.12); }
     #about .about-card h3 { color: var(--primary); }
 
-    #projects .project-card { background: rgba(30, 19, 18, 0.04); border-color: rgba(30, 19, 18, 0.12); }
+    #projects .project-card { background: rgba(184, 26, 43, 0.04); border-color: rgba(184, 26, 43, 0.12); }
     #projects .project-card h3 { color: var(--primary); }
-    #projects .project-card p { color: rgba(30, 19, 18, 0.6); }
+    #projects .project-card p { color: rgba(184, 26, 43, 0.6); }
 
     .timeline-badge { text-align: center; display: block; }
     .timeline-badge img { display: block; margin: 0 auto; width: 48px; height: 48px; object-fit: contain; }
@@ -71,8 +72,8 @@
       <div class="logo">
         <a href="../../index.html"><img src="../../cptt.png" alt="ÇPTT Logo" style="height:36px;width:auto;border-radius:6px;"></a>
         <span style="color:rgba(251,250,250,0.3);font-size:1.2rem;">|</span>
-        <img src="../../abragames.jpg" alt="Abra Games" style="height:36px;width:auto;border-radius:6px;">
-        <span>"Abra Games" &mdash; <span style="color:var(--accent);">Abra Studio</span></span>
+        <img src="../../frc.jpeg" alt="FRC" style="height:36px;width:auto;border-radius:6px;">
+        <span>"Çapa Pineapple Robotics" &mdash; <span style="color:var(--accent);">FRC Kulübü</span></span>
       </div>
       <button class="nav-toggle" aria-label="Menü">
         <span></span><span></span><span></span>
@@ -93,30 +94,26 @@
     <div class="hero-grid"></div>
     <div class="hero-bg-art">
       <svg viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="60" y="150" width="380" height="100" rx="50" stroke="#ed0001" stroke-width="1.5" opacity="0.18"/>
-        <rect x="80" y="150" width="340" height="100" rx="50" stroke="#ed0001" stroke-width="1.5" opacity="0.15"/>
-        <circle cx="180" cy="200" r="8" stroke="#ed0001" stroke-width="1.5" opacity="0.22"/>
-        <circle cx="330" cy="200" r="8" stroke="#ed0001" stroke-width="1.5" opacity="0.22"/>
-        <rect x="230" y="195" width="40" height="10" rx="5" stroke="#ed0001" stroke-width="1.5" opacity="0.18"/>
-        <rect x="120" y="170" width="20" height="20" rx="4" stroke="#ed0001" stroke-width="1.5" opacity="0.18"/>
-        <rect x="360" y="170" width="20" height="20" rx="4" stroke="#ed0001" stroke-width="1.5" opacity="0.18"/>
-        <polygon points="250,160 230,195 270,195" fill="#ed0001" opacity="0.16"/>
-        <circle cx="120" cy="140" r="2" fill="#ed0001" opacity="0.25"/>
-        <rect x="114" y="128" width="6" height="14" rx="3" stroke="#ed0001" stroke-width="1" opacity="0.2"/>
-        <rect x="90" y="100" width="24" height="24" rx="3" stroke="#ed0001" stroke-width="1" opacity="0.18"/>
-        <rect x="78" y="88" width="24" height="24" rx="3" stroke="#ed0001" stroke-width="1" opacity="0.15" transform="rotate(-15 98 100)"/>
-        <circle cx="400" cy="120" r="2" fill="#ed0001" opacity="0.25"/>
-        <rect x="394" y="108" width="6" height="14" rx="3" stroke="#ed0001" stroke-width="1" opacity="0.18"/>
-        <rect x="370" y="90" width="24" height="24" rx="3" stroke="#ed0001" stroke-width="1" opacity="0.15"/>
-        <rect x="358" y="78" width="24" height="24" rx="3" stroke="#ed0001" stroke-width="1" opacity="0.12" transform="rotate(-15 380 90)"/>
+        <rect x="80" y="120" width="340" height="120" rx="60" stroke="#b81a2b" stroke-width="2" opacity="0.15" fill="none"/>
+        <line x1="200" y1="150" x2="300" y2="150" stroke="#be9940" stroke-width="2" opacity="0.2"/>
+        <line x1="200" y1="180" x2="300" y2="180" stroke="#be9940" stroke-width="2" opacity="0.2"/>
+        <circle cx="120" cy="180" r="12" stroke="#be9940" stroke-width="1.5" opacity="0.18" fill="none"/>
+        <circle cx="380" cy="190" r="12" stroke="#be9940" stroke-width="1.5" opacity="0.18" fill="none"/>
+        <rect x="250" y="260" width="60" height="20" rx="10" stroke="#be9940" stroke-width="1" opacity="0.15" fill="none"/>
+        <rect x="180" y="270" width="140" height="10" rx="5" stroke="#be9940" stroke-width="0.8" opacity="0.12" fill="none"/>
+        <polygon points="180,210 210,240 180,270" fill="#be9940" opacity="0.14"/>
+        <polygon points="320,210 290,240 320,270" fill="#be9940" opacity="0.14"/>
+        <rect x="240" y="240" width="20" height="40" rx="4" stroke="#b81a2b" stroke-width="1" opacity="0.15" fill="none"/>
+        <line x1="150" y1="120" x2="150" y2="240" stroke="#b81a2b" stroke-width="1" opacity="0.12"/>
+        <line x1="350" y1="120" x2="350" y2="240" stroke="#b81a2b" stroke-width="1" opacity="0.12"/>
       </svg>
     </div>
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">Çapa Fen Lisesi</div>
-        <h1><span class="highlight">"Abra Games"</span></h1>
-        <div class="hero-subtitle">Abra Studio</div>
-        <p>Unity ve Unreal Engine ile 2D/3D oyunlar tasarlıyor, yazılım geliştiriyor ve oyun sektöründe marka olma yolunda ilerliyoruz.</p>
+        <h1><span class="highlight">"Çapa Pineapple Robotics"</span></h1>
+        <div class="hero-subtitle">FRC Kulübü</div>
+        <p>FIRST Robotics Competition çatısı altında endüstriyel standartlarda robot geliştirior, hem yazılım hem donanım alanlarında uzmanlaşıyoruz.</p>
         <div class="hero-buttons">
           <a href="#about" class="btn btn-primary">Keşfet</a>
           <a href="#join" class="btn btn-outline">Bize Katıl</a>
@@ -125,7 +122,7 @@
       <div class="hero-visual">
         <div class="hero-logo">
           <div class="hero-logo-img">
-            <img src="../../abragames.jpg" alt="Abra Games Logo">
+            <img src="../../frc.jpeg" alt="FRC Logo">
           </div>
         </div>
       </div>
@@ -138,16 +135,16 @@
       <div class="section-header fade-in">
         <h2>Biz <span>Kimiz?</span></h2>
         <div class="section-divider"></div>
-        <p>Abra Studio, Çapa Fen Lisesinin dijital oyun geliştirme kulübüdür. Bu kulübün kuruluşunda yer alan öğrenciler departmanlarının yöneticisi konumundadır. Yazılım ve seviye tasarlama, 3 boyutlu modelleme, müzik ve ses efektleri tasarımı gibi departmanlar bir oyun geliştirmek için gerekli olan departmanlarımızdır.</p>
+        <p>FRC (FIRST Robotics Competition) kulübümüzde öğrenciler 6 haftalık bir mücadele sonrası First'a gönderirler. Çapa Pineapple Robotics olarak öğrencilerimiz kendi başlarına tasarlamaları, inşa etmeleri ve programlamaları gereken karmaşık robotlar geliştiriyor.</p>
       </div>
       <div class="about-grid">
         <div class="about-card fade-in">
           <h3>Vizyonumuz</h3>
-          <p>Oyun geliştirme sektöründe hem yaratıcılık temasıyla oyun geliştiren hem de ticari başarıyla ön plana çıkan bir marka olmak istiyoruz. Bu yüzden takımımızın azimli ve sebatlı ekibini büyüteceğiz, ekibimizdeki herkesin ufkunu açarak akımımızın mihenk taşlarından olan yaratıcılığımızın mükemmel olması için elimizden gelenin en iyisini yapacağız.</p>
+          <p>FIRST Robotics Competition'da dünya çapında rekabetçi robotlar geliştirerek Türkiye'nin uluslararası robotik sahnesindeki varlığını güçlendirmek.</p>
         </div>
         <div class="about-card fade-in">
           <h3>Misyonumuz</h3>
-          <p>Türkiyede oyun sektörü 2025 yılında toplam 1 milyar dolar hacme ulaştı. Ülkemizde oyun sektörü ilgi görmekte ve çok geniş kitlelerle takip edilmektedir. Ülkemiz adına dünya çapında oynanacak ve geniş hayran kitlelerine ulaşacak bir oyun yapmak, bizim nihai hedefimiz ve en büyük arzumuzdur.</p>
+          <p>Mühendislik, programlama ve takım çalışması becerileri kazandırarak genç yetenekleri uluslararası standartlarda teknoloji geliştirmeye hazırlamak.</p>
         </div>
       </div>
     </div>
@@ -159,23 +156,18 @@
       <div class="section-header fade-in">
         <h2>Yarışmalar</h2>
         <div class="section-divider"></div>
-        <p>Oyun geliştirme yarışmaları ve game jam'lerde okulumuzu temsil ediyoruz.</p>
+        <p>FRC turnuvalarında ve ulusal robotik yarışmalarında okulumuzu temsil ediyoruz.</p>
       </div>
       <div class="areas-grid">
         <div class="area-card fade-in">
-          <div class="area-icon"><img src="../../egitjam.png" alt="Eğitjam"></div>
-          <h3>Eğitjam</h3>
-          <p>Eğitim odaklı game jam etkinliklerinde oyun geliştiriyoruz.</p>
+          <div class="area-icon"><img src="../../robot-logo.png" alt="FRC"></div>
+          <h3>FRC</h3>
+          <p>FIRST Robotics Competition uluslararası turnuvalarında yarışıyoruz.</p>
         </div>
         <div class="area-card fade-in">
-          <div class="area-icon"><img src="../../magarajam.svg" alt="Mağarajam"></div>
-          <h3>Mağarajam</h3>
-          <p>MağaraJam'de yaratıcı oyun konseptleriyle yer alıyoruz.</p>
-        </div>
-        <div class="area-card fade-in">
-          <div class="area-icon"><img src="../../globalgamejam.svg" alt="Global Game Jam"></div>
-          <h3>Global Game Jam</h3>
-          <p>Dünyanın en büyük game jam etkinliğinde 48 saatte oyun geliştiriyoruz.</p>
+          <div class="area-icon"><img src="../../Teknofest_logo.png" alt="TEKNOFEST"></div>
+          <h3>TEKNOFEST</h3>
+          <p>Roket ve robotik kategorilerinde projeler geliştiriyoruz.</p>
         </div>
       </div>
     </div>
@@ -187,23 +179,23 @@
       <div class="section-header fade-in">
         <h2>Projelerimiz</h2>
         <div class="section-divider"></div>
-        <p>Geliştirdiğimiz oyun projeleri.</p>
+        <p>Geliştirdiğimiz robotik projeleri.</p>
       </div>
       <div class="projects-grid">
-        <div class="project-card fade-in" data-modal="modal-oyun-1">
-          <div class="project-image"><img src="oyun.png" alt="2D Oyun"></div>
+        <div class="project-card fade-in" data-modal="modal-frc-1">
+          <div class="project-image"><img src="frc.jpeg" alt="FRC Robotu"></div>
           <div class="project-info">
-            <span class="tag">Oyun</span>
-            <h3>Mobil 2D Platform Oyunu</h3>
-            <p>Unity ile geliştirilen 2D platform macera oyunu.</p>
+            <span class="tag">FRC</span>
+            <h3>FRC Yarışma Robotu</h3>
+            <p>FIRST Robotics Competition için tasarlanan yarışma robotu.</p>
           </div>
         </div>
-        <div class="project-card fade-in" data-modal="modal-oyun-2">
-          <div class="project-image"><img src="oyun.png" alt="FPS Oyun"></div>
+        <div class="project-card fade-in" data-modal="modal-frc-2">
+          <div class="project-image"><img src="frc.jpeg" alt="Autonomous Robot"></div>
           <div class="project-info">
-            <span class="tag">Oyun</span>
-            <h3>First Person Shooter</h3>
-            <p>Unreal Engine ile geliştirilen FPS oyun prototipi.</p>
+            <span class="tag">Robotik</span>
+            <h3>Otonom Navigasyon Robotu</h3>
+            <p>Sensör fusion ile otonom navigasyon yapabilen robot.</p>
           </div>
         </div>
       </div>
@@ -211,26 +203,26 @@
   </section>
 
   <!-- Project Modals -->
-  <div class="project-modal-overlay" id="modal-oyun-1">
+  <div class="project-modal-overlay" id="modal-frc-1">
     <div class="project-modal">
       <button class="project-modal-close">&times;</button>
-      <img class="project-modal-img" src="oyun.png" alt="2D Oyun">
+      <img class="project-modal-img" src="frc.jpeg" alt="FRC Robotu">
       <div class="project-modal-body">
-        <span class="tag">Oyun</span>
-        <h2>Mobil 2D Platform Oyunu</h2>
-        <p>Unity motoru ile geliştirilen 2D platform macera oyunu. Karakter kontrolü, düşman yapay zekası ve seviye tasarımını içerir.</p>
+        <span class="tag">FRC</span>
+        <h2>FRC Yarışma Robotu</h2>
+        <p>FIRST Robotics Competition turnuvası için tasarlanan ve geliştirilen yarışma robotu.</p>
         <p>Proje henüz geliştirme aşamasındadır.</p>
       </div>
     </div>
   </div>
-  <div class="project-modal-overlay" id="modal-oyun-2">
+  <div class="project-modal-overlay" id="modal-frc-2">
     <div class="project-modal">
       <button class="project-modal-close">&times;</button>
-      <img class="project-modal-img" src="oyun.png" alt="FPS Oyun">
+      <img class="project-modal-img" src="frc.jpeg" alt="Otonom Robot">
       <div class="project-modal-body">
-        <span class="tag">Oyun</span>
-        <h2>First Person Shooter</h2>
-        <p>Unreal Engine ile geliştirilen FPS oyun prototipi. Silah mekaniği, harita tasarımı ve çoklu oyuncu altyapısı üzerinde çalışılıyor.</p>
+        <span class="tag">Robotik</span>
+        <h2>Otonom Navigasyon Robotu</h2>
+        <p>Çeşitli sensörleri kullanarak otonom navigasyon yapabilen robot platformu geliştiriyoruz.</p>
         <p>Proje henüz geliştirme aşamasındadır.</p>
       </div>
     </div>
@@ -242,23 +234,23 @@
       <div class="section-header fade-in">
         <h2>Ekibimiz</h2>
         <div class="section-divider"></div>
-        <p>Birlikte öğrenen, birlikte üreten takım arkadaşlarımız.</p>
+        <p>Robot geliştirme sürecinde her disiplinden uzmanlar birlikte çalışıyoruz.</p>
       </div>
       <div class="sub-teams-grid">
-        <div class="sub-team-card fade-in">
+        <div class="sub-team-card fade-in" style="background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
+          <div class="sub-team-icon">🏗️</div>
+          <h3>Mekanik</h3>
+          <p>Robotun fiziksel yapısını, hareket mekanizmalarını ve dayanıklı tasarımları geliştiriyoruz.</p>
+        </div>
+        <div class="sub-team-card fade-in" style="background:rgba(190,153,64,0.08);border-color:rgba(184,26,43,0.2);">
           <div class="sub-team-icon">💻</div>
-          <h3>Yazılım &amp; Seviye Tasarımı</h3>
-          <p>Unity ve Unreal Engine'de oyun mekanikleri, yapay zeka davranışları, seviye tasarımı ve fizik sistemleri geliştiriyoruz.</p>
+          <h3>Yazılım</h3>
+          <p>WPILib ve Java ile robotun kontrol sistemini, otonom sektör ve sensör entegrasyonunu programlıyoruz.</p>
         </div>
-        <div class="sub-team-card fade-in">
-          <div class="sub-team-icon">🎨</div>
-          <h3>3D Modelleme</h3>
-          <p>2D/3D modelleme, karakter tasarımı, animasyon ve görsel efektlerle oyunlarımızın dünyasını yaratıyoruz.</p>
-        </div>
-        <div class="sub-team-card fade-in">
-          <div class="sub-team-icon">🎵</div>
-          <h3>Müzik &amp; Ses</h3>
-          <p>Arka plan müzikleri, ses efektleri ve diyalog kayıtlarıyla oyunlarımıza atmosfer katıyoruz.</p>
+        <div class="sub-team-card fade-in" style="background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
+          <div class="sub-team-icon">⚙️</div>
+          <h3>Elektronik</h3>
+          <p>Pneumatik sistemler, güç dağıtımı ve sensörlerin devresel entegrasyonunu sağlıyoruz.</p>
         </div>
       </div>
     </div>
@@ -278,32 +270,24 @@
             <div class="timeline-year">2025</div>
             <div class="timeline-badge">🏆</div>
             <div class="timeline-body">
-              <h4>TEKNOFEST</h4>
-              <p>Oyun Kategorisi<br>Finalist</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2025</div>
-            <div class="timeline-badge">🎖</div>
-            <div class="timeline-body">
-              <h4>Global Game Jam</h4>
-              <p>Özel Ödül</p>
+              <h4>FRC Turnuvası</h4>
+              <p>Design Award</p>
             </div>
           </div>
           <div class="timeline-card">
             <div class="timeline-year">2024</div>
             <div class="timeline-badge">🥈</div>
             <div class="timeline-body">
-              <h4>Game Jam</h4>
-              <p>2.lik</p>
+              <h4>FRC Regional</h4>
+              <p>Mentor Award<br>Finalist</p>
             </div>
           </div>
           <div class="timeline-card">
             <div class="timeline-year">2024</div>
-            <div class="timeline-badge">🥉</div>
+            <div class="timeline-badge">🤖</div>
             <div class="timeline-body">
-              <h4>Okul Oyun Yarışması</h4>
-              <p>3.lük</p>
+              <h4>Çıkarken</h4>
+              <p>İlk sezon tamamlama</p>
             </div>
           </div>
         </div>
@@ -313,15 +297,15 @@
   </section>
 
   <!-- Sponsors -->
-  <section class="section" id="sponsors">
+  <section class="section section-dark" id="sponsors">
     <div class="container">
       <div class="section-header fade-in">
         <h2>Sponsorlar</h2>
         <div class="section-divider"></div>
       </div>
       <div style="text-align:center;padding:60px 0;">
-        <h3 style="color:var(--primary);font-size:1.5rem;margin-bottom:8px;">Yapım Aşamasındadır</h3>
-        <p style="color:rgba(30,19,18,0.6);">Sponsorlarımız hakkında bilgiler yakında burada yer alacak.</p>
+        <h3 style="color:var(--light);font-size:1.5rem;margin-bottom:8px;">Yapım Aşamasındadır</h3>
+        <p style="color:rgba(var(--light-rgb),0.6);">Sponsorlarımız hakkında bilgiler yakında burada yer alacak.</p>
       </div>
     </div>
   </section>
@@ -330,7 +314,7 @@
   <section class="join-section" id="join">
     <div class="container">
       <h2>Sen de <span>katıl</span></h2>
-      <p>Oyun geliştirmeye meraklı, öğrenmeye ve üretmeye hevesli herkesi aramızda görmekten mutluluk duyarız.</p>
+      <p>Robotik, mekanik, yazılım ve elektronik alanlarında kendini geliştirmek isteyen herkesi aramızda görmekten mutluluk duyarız.</p>
       <div class="join-grid">
         <div class="join-card">
           <div class="join-card-icon">📢</div>
@@ -339,13 +323,8 @@
         </div>
         <div class="join-card">
           <div class="join-card-icon">🤝</div>
-          <h3>Tanıtım</h3>
+          <h3>Birebir Görüşme</h3>
           <p>Takım üyelerimizle birebir görüşerek projelerimiz ve çalışma düzenimiz hakkında bilgi alabilirsin.</p>
-        </div>
-        <div class="join-card">
-          <div class="join-card-icon">📚</div>
-          <h3>Eğitim</h3>
-          <p>Kulübümüzün düzenlediği eğitim programlarına katılarak oyun geliştirme alanında kendini geliştirebilirsin.</p>
         </div>
       </div>
     </div>
@@ -355,15 +334,15 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <span style="font-size:0.85rem;font-weight:600;">Abra Games &mdash; Abra Studio</span>
+        <span style="font-size:0.85rem;font-weight:600;">"Çapa Pineapple Robotics" &mdash; FRC Kulübü</span>
         <ul class="footer-links">
-          <li><a href="https://www.instagram.com/abragames34/?hl=tr" target="_blank"><img src="../../Instagram_logo_2022.svg" alt="Instagram">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@AbraGames34" target="_blank"><img src="../../YouTube_full-color_icon_(2017).svg.webp" alt="YouTube">YouTube</a></li>
-          <li><a href="mailto:abragamescontact@gmail.com"><img src="../../Gmail_icon_(2026).svg.webp" alt="Mail">Mail</a></li>
+          <li><a href="https://www.instagram.com/capapineapplerobotics/" target="_blank"><img src="../../Instagram_logo_2022.svg" alt="Instagram">Instagram</a></li>
+          <li><a href="https://www.youtube.com/@%C3%87apaProjeTak%C4%B1mlar%C4%B1" target="_blank"><img src="../../YouTube_full-color_icon_(2017).svg.webp" alt="YouTube">YouTube</a></li>
+          <li><a href="mailto:capapineapplerobotics@gmail.com"><img src="../../Gmail_icon_(2026).svg.webp" alt="Mail">Mail</a></li>
         </ul>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Çapa Proje Takımları Topluluğu &mdash; Abra Studio</p>
+        <p>&copy; 2026 Çapa Proje Takımları Topluluğu &mdash; FRC Kulübü</p>
       </div>
     </div>
   </footer>
@@ -380,10 +359,8 @@
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
       }, { threshold: 0.1 });
-
       document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-      // Timeline scroll arrows
       document.querySelectorAll('.timeline-wrapper').forEach(wrapper => {
         const scroll = wrapper.querySelector('.timeline-scroll');
         const leftBtn = wrapper.querySelector('.timeline-arrow--left');
