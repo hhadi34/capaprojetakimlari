@@ -37,13 +37,13 @@
     .sub-team-icon { background: rgba(190, 153, 64, 0.15); }
     .timeline-arrow:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-    .join-section { background: #b81a2b; }
-    .join-section h2 { color: var(--accent); }
+    .join-section { background: #fff; }
+    .join-section h2 { color: var(--primary); }
     .join-section h2 span { color: var(--accent); }
-    .join-section p { color: rgba(255,255,255,0.7); }
-    .join-section .join-card { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.12); }
-    .join-section .join-card h3 { color: #fff; }
-    .join-section .join-card p { color: rgba(255,255,255,0.6); }
+    .join-section p { color: rgba(184,26,43,0.7); }
+    .join-section .join-card { background: rgba(184,26,43,0.04); border-color: rgba(184,26,43,0.12); }
+    .join-section .join-card h3 { color: var(--primary); }
+    .join-section .join-card p { color: rgba(184,26,43,0.6); }
 
     .footer { background: #8c1420; }
     .footer-links a { color: rgba(255,255,255,0.6); }
@@ -83,7 +83,7 @@
         <li><a href="#areas">Yarışmalar</a></li>
         <li><a href="#projects">Projeler</a></li>
         <li><a href="#team">Ekibimiz</a></li>
-        <li><a href="#achievements">Başarılarımız</a></li>
+        <li><a href="#sponsors">Sponsorlar</a></li>
         <li><a href="#join">Katıl</a></li>
       </ul>
     </div>
@@ -191,28 +191,28 @@
         <div class="section-divider"></div>
         <p>Robot geliştirme sürecinde her disiplinden uzmanlar birlikte çalışıyoruz.</p>
       </div>
-      <div class="sub-teams-grid">
-        <div class="sub-team-card fade-in" style="background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
           <div class="sub-team-icon">🏗️</div>
           <h3>Mekanik</h3>
           <p>Robotun fiziksel yapısını, hareket mekanizmalarını ve dayanıklı tasarımları geliştiriyoruz.</p>
         </div>
-        <div class="sub-team-card fade-in" style="background:rgba(190,153,64,0.08);border-color:rgba(184,26,43,0.2);">
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;background:rgba(190,153,64,0.08);border-color:rgba(184,26,43,0.2);">
           <div class="sub-team-icon">💻</div>
           <h3>Yazılım</h3>
           <p>WPILib ve Java ile robotun kontrol sistemini, otonom sektör ve sensör entegrasyonunu programlıyoruz.</p>
         </div>
-        <div class="sub-team-card fade-in" style="background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
           <div class="sub-team-icon">⚙️</div>
           <h3>Elektronik</h3>
           <p>Pneumatik sistemler, güç dağıtımı ve sensörlerin devresel entegrasyonunu sağlıyoruz.</p>
         </div>
-        <div class="sub-team-card fade-in" style="background:rgba(190,153,64,0.08);border-color:rgba(184,26,43,0.2);">
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;background:rgba(190,153,64,0.08);border-color:rgba(184,26,43,0.2);">
           <div class="sub-team-icon">📣</div>
           <h3>PR</h3>
           <p>Sponsorluk görüşmeleri, sosyal medya yönetimi ve etkinlik organizasyonlarını yürütüyoruz.</p>
         </div>
-        <div class="sub-team-card fade-in" style="background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
+        <div class="sub-team-card fade-in" style="flex:0 1 calc(33.333% - 14px);min-width:200px;background:rgba(184,26,43,0.1);border-color:rgba(190,153,64,0.2);">
           <div class="sub-team-icon">💰</div>
           <h3>Finans</h3>
           <p>Bütçe yönetimi, mali planlama ve kaynak optimizasyonunu sağlıyoruz.</p>
@@ -228,35 +228,9 @@
         <h2>Başarılarımız</h2>
         <div class="section-divider"></div>
       </div>
-      <div class="timeline-wrapper fade-in">
-        <button class="timeline-arrow timeline-arrow--left" aria-label="Geri">◀</button>
-        <div class="timeline-scroll">
-          <div class="timeline-card">
-            <div class="timeline-year">2025</div>
-            <div class="timeline-badge">🏆</div>
-            <div class="timeline-body">
-              <h4>FRC Turnuvası</h4>
-              <p>Design Award</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2024</div>
-            <div class="timeline-badge">🥈</div>
-            <div class="timeline-body">
-              <h4>FRC Regional</h4>
-              <p>Mentor Award<br>Finalist</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2024</div>
-            <div class="timeline-badge">🤖</div>
-            <div class="timeline-body">
-              <h4>Çıkarken</h4>
-              <p>İlk sezon tamamlama</p>
-            </div>
-          </div>
-        </div>
-        <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
+      <div style="text-align:center;padding:60px 0;">
+        <h3 style="color:var(--primary);font-size:1.5rem;margin-bottom:8px;">Yakında</h3>
+        <p style="color:rgba(184,26,43,0.6);">Başarılarımız hakkında bilgiler yakında burada yer alacak.</p>
       </div>
     </div>
   </section>

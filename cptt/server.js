@@ -12,7 +12,8 @@ const routes = {
   '/anka': 'pages/iha/anka.html',
   '/rok-et': 'pages/roket/rok-et.html',
   '/abra': 'pages/oyun/abra.html',
-  '/frc': 'pages/frc/frc.html'
+  '/frc': 'pages/frc/frc.html',
+  '/galeri': 'pages/galeri/galeri.html'
 };
 
 Object.entries(routes).forEach(([route, file]) => {
