@@ -154,31 +154,43 @@
         <div class="section-divider"></div>
         <p>Takımlarımızın geliştirdiği projelerden bazıları.</p>
       </div>
-      <div class="projects-grid">
-        <div class="project-card fade-in" data-modal="modal-main-1">
-          <div class="project-image"><img src="ekg.webp" alt="EKG-Tarayıcı"></div>
-          <div class="project-info">
-            <span class="tag">Sağlıkta YZ</span>
-            <h3>EKG-Tarayıcı</h3>
-            <p>12 derivasyonlu EKG sinyallerinden aritmileri tespit eden hibrit derin öğrenme karar destek sistemi.</p>
+      <div class="timeline-wrapper fade-in">
+        <button class="timeline-arrow timeline-arrow--left" aria-label="Geri">◀</button>
+        <div class="projects-scroll">
+          <div class="project-card fade-in" data-modal="modal-main-1">
+            <div class="project-image"><img src="ekg.webp" alt="EKG-Tarayıcı"></div>
+            <div class="project-info">
+              <span class="tag">Sağlıkta YZ</span>
+              <h3>EKG-Tarayıcı</h3>
+              <p>12 derivasyonlu EKG sinyallerinden aritmileri tespit eden hibrit derin öğrenme karar destek sistemi.</p>
+            </div>
+          </div>
+          <div class="project-card fade-in" data-modal="modal-main-2">
+            <div class="project-image"><img src="lacin.jpeg" alt="LAÇİN"></div>
+            <div class="project-info">
+              <span class="tag">İHA</span>
+              <h3>LAÇİN</h3>
+              <p>Otonom uçuş ve yük bırakma kabiliyetine sahip İHA.</p>
+            </div>
+          </div>
+          <div class="project-card fade-in" data-modal="modal-main-3">
+            <div class="project-image"><img src="abra oyun.jpg" alt="AtomHeart Ant"></div>
+            <div class="project-info">
+              <span class="tag">Oyun</span>
+              <h3>AtomHeart Ant</h3>
+              <p>Microjam 54'te 48 saatte geliştirilen, tırmanma ve saldırı mekaniklerine sahip macera oyunu.</p>
+            </div>
+          </div>
+          <div class="project-card fade-in" data-modal="modal-main-4">
+            <div class="project-image"><img src="havacilikyz.jpe" alt="BlackScope"></div>
+            <div class="project-info">
+              <span class="tag">Havacılıkta YZ</span>
+              <h3>BlackScope</h3>
+              <p>İHA kameralarından gelen video akışını gerçek zamanlı işleyen çoklu görevli yapay zeka sistemi.</p>
+            </div>
           </div>
         </div>
-        <div class="project-card fade-in" data-modal="modal-main-2">
-          <div class="project-image"><img src="lacin.jpeg" alt="LAÇİN"></div>
-          <div class="project-info">
-            <span class="tag">İHA</span>
-            <h3>LAÇİN</h3>
-            <p>Otonom uçuş ve yük bırakma kabiliyetine sahip İHA.</p>
-          </div>
-        </div>
-        <div class="project-card fade-in" data-modal="modal-main-3">
-          <div class="project-image"><img src="abra oyun.jpg" alt="AtomHeart Ant"></div>
-          <div class="project-info">
-            <span class="tag">Oyun</span>
-            <h3>AtomHeart Ant</h3>
-            <p>Microjam 54'te 48 saatte geliştirilen, tırmanma ve saldırı mekaniklerine sahip macera oyunu.</p>
-          </div>
-        </div>
+        <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
       </div>
     </div>
   </section>
@@ -222,6 +234,20 @@
         <p>Itch.io'da düzenlenen ve teması "büyük" olan Microjam 54'te 48 saat içerisinde şu ana kadar ki en tutkuyla yaptığımız oyun "AtomHeart Ant"'i tasarladık.</p>
         <p>Oyunun bu sürümüyle birlikte tamamen yenilenmiş bir harita ve tırmanma, saldırı, zehirli asit, can barı, çift zıplama, checkpoint gibi farklı mekaniklerle oyunculara yeni bir deneyim sunarken oyunculara konsolla oynama seçeneği sunuyoruz.</p>
         <a href="https://drive.google.com/file/d/1p6JCd9CzWktW1Z2Io3J0N7oC8uxtx7E8/view" target="_blank" class="github-link">İndir →</a>
+      </div>
+    </div>
+  </div>
+  <div class="project-modal-overlay" id="modal-main-4">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <img class="project-modal-img" src="yz.png" alt="BlackScope">
+      <div class="project-modal-body">
+        <span class="tag">Havacılıkta YZ</span>
+        <h2>BlackScope: İHA İçin Çoklu Görevli Yapay Zeka Sistemi</h2>
+        <p>TEKNOFEST 2026 Havacılıkta Yapay Zeka Yarışması için geliştirilmiş, İHA kameralarından gelen video akışını tamamen çevrimdışı ve gerçek zamanlı işleyen çoklu görevli bir bilgisayarlı görü sistemi.</p>
+        <p>BlackScope, üç bağımsız yarışma görevini tek geçişli entegre bir boru hattında birleştirir: Nesne tespiti ve hareket analizi (YOLOv11 + ego-hareket telafisi), görsel odometri ile GPS kesintisinde pozisyon kestirimi (Lucas-Kanade optik akış + Essential Matrix), ve adaptif ORB/SIFT ile referans nesne eşleme.</p>
+        <p>İHA'dan alınan 7.5 FPS video akışını ve telemetri verilerini kullanarak saniyede en az 1 kare işleme hızıyla yarışma sunucusuna JSON formatında yanıt üretilmektedir.</p>
+        <a href="https://github.com/Darulmu-AI-limin/TEKNOFEST2026-HavaciliktaYZ-OTR" target="_blank" class="github-link">GitHub'da İncele →</a>
       </div>
     </div>
   </div>
@@ -300,11 +326,15 @@
           </div>
         </div>
         <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
+        <div class="project-card fade-in" data-modal="modal-main-3">
+          <div class="project-image"><img src="havacilikyz.jpe" alt="BlackScope"></div>
+          <div class="project-info">
+            <span class="tag">Havacılıkta YZ</span>
+            <h3>BlackScope</h3>
+            <p>İHA kameralarından gelen video akışını gerçek zamanlı işleyen çoklu görevli yapay zeka sistemi.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- News -->
   <section class="section section-dark" id="news">
     <div class="container">
       <div class="section-header fade-in">

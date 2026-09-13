@@ -67,10 +67,10 @@ document.addEventListener('DOMContentLoaded', () => {
     card.style.transitionDelay = `${i * 0.08}s`;
   });
 
-  // Timeline scroll arrows
-  const timelineWrappers = document.querySelectorAll('.timeline-wrapper');
-  timelineWrappers.forEach(wrapper => {
-    const scroll = wrapper.querySelector('.timeline-scroll');
+  // Timeline + Projects scroll arrows
+  const scrollWrappers = document.querySelectorAll('.timeline-wrapper');
+  scrollWrappers.forEach(wrapper => {
+    const scroll = wrapper.querySelector('.timeline-scroll') || wrapper.querySelector('.projects-scroll');
     const leftBtn = wrapper.querySelector('.timeline-arrow--left');
     const rightBtn = wrapper.querySelector('.timeline-arrow--right');
 
