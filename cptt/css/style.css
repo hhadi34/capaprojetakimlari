@@ -558,10 +558,14 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .projects-scroll .project-card {
-  min-width: 320px;
-  max-width: 320px;
+  min-width: 280px;
+  max-width: 280px;
   flex-shrink: 0;
   scroll-snap-align: start;
+}
+
+.projects-scroll .project-image {
+  height: 160px;
 }
 
 .project-card {
@@ -824,7 +828,9 @@ img { max-width: 100%; height: auto; display: block; }
 
 .section-dark .news-card {
   background: rgba(255,255,255,0.06);
-  border-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  padding: 28px;
 }
 .section-dark .news-card h3 { color: #fff; }
 .section-dark .news-card p { color: rgba(255,255,255,0.6); }
