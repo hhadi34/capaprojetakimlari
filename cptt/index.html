@@ -5,17 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Çapa Proje Takımları Topluluğu</title>
   <link rel="icon" type="image/png" href="cptt.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    #achievements .timeline-card { background: rgba(8,15,31,0.04); border-color: rgba(8,15,31,0.1); }
-    #achievements .timeline-card:hover { background: rgba(8,15,31,0.07); }
-    #achievements .timeline-body h4 { color: #080f1f; }
-    #achievements .timeline-body p { color: rgba(8,15,31,0.6); }
-    #achievements .timeline-badge { filter: none; }
-  </style>
 </head>
 <body>
 
@@ -45,26 +35,31 @@
   <section class="hero" id="hero">
     <div class="hero-grid-bg"></div>
     <div class="container">
-      <div class="hero-content">
-        <div class="hero-badge">Çapa Fen Lisesi</div>
-        <h1>Çapa Proje <span class="highlight">Takımları</span> Topluluğu</h1>
-        <h2>Teknoloji, bilim ve üretim tutkunu öğrenciler buluşuyor</h2>
-        <p>Yapay zekadan roket teknolojilerine, oyun geliştirmeden İHA sistemlerine kadar beş farklı takımda hayallerini gerçeğe dönüştürüyoruz.</p>
-        <div class="hero-buttons">
-          <a href="#teams" class="btn btn-primary">Takımları Keşfet</a>
-          <a href="#nasil-katilirim" class="btn btn-outline">Bize Katıl</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-logo-wrapper">
-          <div class="hero-ring"></div>
-          <div class="hero-ring"></div>
-          <div class="hero-ring"></div>
-<img src="cptt.png" alt="ÇPTT Logo">
-          <div class="floating-dots">
-            <span></span><span></span><span></span><span></span><span></span><span></span>
+      <div class="hero-index-grid">
+        <div class="hero-main">
+          <div class="eyebrow">Çapa Fen Lisesi — İstanbul</div>
+          <h1 class="hero-title">
+            <span class="line"><span>Çapa Proje</span></span>
+            <span class="line"><span><em>Takımları</em> Topluluğu</span></span>
+          </h1>
+          <p class="hero-lede">Yapay zekadan roket teknolojilerine, oyun geliştirmeden İHA sistemlerine kadar beş farklı takımda hayallerini gerçeğe dönüştüren öğrenciler buluşuyor.</p>
+          <div class="hero-cta">
+            <a class="link-arrow" href="#teams">Takımları keşfet <span aria-hidden="true">↓</span></a>
+            <a class="link-quiet" href="#nasil-katilirim">Bize katıl</a>
           </div>
         </div>
+        <div class="hero-figure">
+          <img src="cptt.png" class="hero-brand-logo" alt="Çapa Proje Takımları">
+          <div class="hero-figure-meta">
+            <div class="hero-slogan">Bugünün Çabası, Yarının Çapası</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Darülmu-AI-limin <b>✦</b> Yapay Zeka <b>✦</b> ANKA <b>✦</b> İHA <b>✦</b> ROK-ET <b>✦</b> Roket <b>✦</b> Abra Games <b>✦</b> Oyun <b>✦</b> Çapa Pineapple Robotics <b>✦</b> FRC</span>
+        <span>Darülmu-AI-limin <b>✦</b> Yapay Zeka <b>✦</b> ANKA <b>✦</b> İHA <b>✦</b> ROK-ET <b>✦</b> Roket <b>✦</b> Abra Games <b>✦</b> Oyun <b>✦</b> Çapa Pineapple Robotics <b>✦</b> FRC</span>
       </div>
     </div>
   </section>
@@ -72,22 +67,30 @@
   <!-- About -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Biz <span>Kimiz?</span></h2>
-        <div class="section-divider"></div>
-        <p>Bizler; Çapa'nın enerjisini sadece anı yaşamak için değil, geleceği inşa etmek için kullanan yeni nesil proje ve fikir insanlarıyız. Kafasındaki teorileri kağıt üstünde bırakmayıp gerçeğe dönüştüren, her biri kendi alanında meraklı zihinlerin birleştiği noktayız.</p>
-        <p style="margin-top:12px">Sadece ortak bir topluluğun üyeleri değiliz; fikirleri hayata geçirmek için birlikte çabalayan, zorlukları omuz omuza aşan ve Çapa adını yarınlara taşıyacak olan yeni nesil bir ekosistemiz.</p>
-      </div>
-      <div class="about-grid">
-        <div class="about-text fade-in">
-          <h3>Vizyonumuz</h3>
-          <p>Çapa'nın köklü geçmişinden ve nesiller boyu aktarılan aidiyet kültüründen aldığımız ilhamı; teknoloji, bilim, inovasyon ve üretimle harmanlayarak geleceğin öncü ekosistemini inşa etmek.</p>
-          <p style="margin-top:12px">Sadece hayal kurmakla kalmayıp, bu hayalleri somut, sürdürülebilir ve toplumsal fayda sağlayan projelere dönüştüren; çağın dijital ve bilimsel gelişmelerine yön veren, ilham verici bir merkez olmak.</p>
+      <header class="sec-head">
+        <div class="sec-kicker">📖 — Hakkımızda</div>
+        <h2>Biz <em>kimiz?</em></h2>
+        <p class="sec-lede">Kafasındaki teorileri kağıt üstünde bırakmayıp gerçeğe dönüştüren, her biri kendi alanında meraklı zihinlerin birleştiği nokta.</p>
+      </header>
+      <div class="about-layout">
+        <div class="about-rail">
+          <div class="rail-item reveal-slide" style="--d:0">
+            <span class="rail-num">Vizyon</span>
+            <h3>Öncü ekosistem</h3>
+            <p style="color:var(--ink-soft);font-size:0.9rem;font-weight:300;line-height:1.8;">Çapa'nın köklü geçmişinden aldığımız ilhamı teknoloji, bilim, inovasyon ve üretimle harmanlayarak geleceğin öncü topluluğunu inşa etmek.</p>
+          </div>
+          <div class="rail-item reveal-slide" style="--d:1">
+            <span class="rail-num">Misyon</span>
+            <h3>Üreten bireyler</h3>
+            <p style="color:var(--ink-soft);font-size:0.9rem;font-weight:300;line-height:1.8;">Genç zihinlerin potansiyelini ortaya çıkararak teorik bilgiyi projelere dönüştürmeye cesaret veren bir alan yaratmak.</p>
+          </div>
         </div>
-        <div class="about-text fade-in">
-          <h3>Misyonumuz</h3>
-          <p>Çapa çatısı altında bir araya gelen genç zihinlerin potansiyelini ortaya çıkararak teorik bilgiyi teknolojiye ve projelere dönüştürmek için cesaret veren bir alan yaratmak.</p>
-          <p style="margin-top:12px">Ortak akıl ve dayanışma kültürüyle üyelerimizin üreten bireyler olmasını sağlamak; Çapa adını geleceğe taşıyacak öncü ve kalıcı adımlar atmak.</p>
+        <div class="about-body">
+          <p class="lead drop">Bizler; Çapa'nın enerjisini sadece anı yaşamak için değil, geleceği inşa etmek için kullanan yeni nesil proje ve fikir insanlarıyız.</p>
+          <p>Sadece ortak bir topluluğun üyeleri değiliz; fikirleri hayata geçirmek için birlikte çabalayan, zorlukları omuz omuza aşan ve Çapa adını yarınlara taşıyacak yeni nesil bir ekosistemiz.</p>
+          <div class="about-motto">
+            <span class="about-motto-text">Bugünün Çabası, Yarının Çapası</span>
+          </div>
         </div>
       </div>
     </div>
@@ -96,101 +99,111 @@
   <!-- Teams -->
   <section class="section section-dark" id="teams">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Takımlarımız</h2>
-        <div class="section-divider"></div>
-        <p>Her biri kendi alanında uzmanlaşan beş farklı takımda sen de yerini alabilirsin.</p>
-      </div>
-      <div class="teams-grid">
-        <a href="/darulmu-AI-limin" class="team-card fade-in">
-          <div class="team-icon">
-            <img src="yz.png" alt="Yapay Zeka">
+      <header class="sec-head">
+        <div class="sec-kicker">🚀 — Takımlar</div>
+        <h2>Her biri kendi alanında <em>uzman</em></h2>
+        <p class="sec-lede">Beş takım, beş disiplin. Hangisinde yerini alacağına sen karar ver.</p>
+      </header>
+      <div class="team-index">
+        <a class="team-row reveal" style="--d:0" href="/darulmu-AI-limin">
+          <span class="team-row-index mono">01</span>
+          <span class="team-row-logo"><img src="yz.png" alt="Yapay Zeka"></span>
+          <div class="team-row-main">
+            <div class="team-row-nick">&ldquo;Darülmu-AI-limin&rdquo;</div>
+            <h3>Yapay Zeka Kulübü</h3>
           </div>
-          <div class="team-nickname">"Darülmu-AI-limin"</div>
-          <h3>Yapay Zeka Kulübü</h3>
-          <p>Derin öğrenme, doğal dil işleme ve bilgisayarlı görü alanlarında projeler geliştiriyoruz.</p>
+          <div class="team-row-focus">Derin öğrenme · NLP · Görü</div>
+          <span class="team-row-arrow" aria-hidden="true">→</span>
         </a>
-        <a href="/anka" class="team-card fade-in">
-          <div class="team-icon">
-            <img src="iha.png" alt="İHA">
+        <a class="team-row reveal" style="--d:1" href="/anka">
+          <span class="team-row-index mono">02</span>
+          <span class="team-row-logo"><img src="iha.png" alt="İHA"></span>
+          <div class="team-row-main">
+            <div class="team-row-nick">&ldquo;ANKA&rdquo;</div>
+            <h3>İHA Kulübü</h3>
           </div>
-          <div class="team-nickname">"ANKA Takımı"</div>
-          <h3>İHA Kulübü</h3>
-          <p>İnsansız hava araçları tasarlıyor, üretiyor ve otonom uçuş sistemleri geliştiriyoruz.</p>
+          <div class="team-row-focus">İnsansız hava araçları · Otonom uçuş</div>
+          <span class="team-row-arrow" aria-hidden="true">→</span>
         </a>
-        <a href="/rok-et" class="team-card fade-in">
-          <div class="team-icon">
-            <img src="roket.png" alt="Roket">
+        <a class="team-row reveal" style="--d:2" href="/rok-et">
+          <span class="team-row-index mono">03</span>
+          <span class="team-row-logo"><img src="roket.png" alt="ROK-ET"></span>
+          <div class="team-row-main">
+            <div class="team-row-nick">&ldquo;ROK-ET&rdquo;</div>
+            <h3>Roket Kulübü</h3>
           </div>
-          <div class="team-nickname">"ROK-ET"</div>
-          <h3>Roket Kulübü</h3>
-          <p>Model roket tasarımı, itki sistemleri ve aviyonik alanında çalışmalar yürütüyoruz.</p>
+          <div class="team-row-focus">Model roket · İtki · Aviyonik</div>
+          <span class="team-row-arrow" aria-hidden="true">→</span>
         </a>
-        <a href="https://abragames.huseyinlab.xyz/landing" class="team-card fade-in">
-          <div class="team-icon">
-            <img src="abragames.jpg" alt="Abra Games" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
+        <a class="team-row reveal" style="--d:3" href="https://abragames.huseyinlab.xyz/landing">
+          <span class="team-row-index mono">04</span>
+          <span class="team-row-logo"><img src="abragames.jpg" alt="Abra Games"></span>
+          <div class="team-row-main">
+            <div class="team-row-nick">&ldquo;Abra Games&rdquo;</div>
+            <h3>Oyun Geliştirme Kulübü</h3>
           </div>
-          <div class="team-nickname">"Abra Games"</div>
-          <h3>Oyun Geliştirme Kulübü</h3>
-          <p>Unity ve Unreal Engine ile 2D/3D oyunlar tasarlıyor, game jam'lere katılıyoruz.</p>
+          <div class="team-row-focus">Unity · Unreal · Game Jam</div>
+          <span class="team-row-arrow" aria-hidden="true">→</span>
         </a>
-        <a href="/frc" class="team-card fade-in">
-          <div class="team-icon">
-            <img src="frc.jpeg" alt="FRC" style="width:100%;height:100%;object-fit:contain;border-radius:12px;">
+        <a class="team-row reveal" style="--d:4" href="/frc">
+          <span class="team-row-index mono">05</span>
+          <span class="team-row-logo"><img src="frc.jpeg" alt="FRC"></span>
+          <div class="team-row-main">
+            <div class="team-row-nick">&ldquo;Çapa Pineapple Robotics&rdquo;</div>
+            <h3>FRC Kulübü</h3>
           </div>
-          <div class="team-nickname">"Çapa Pineapple Robotics"</div>
-          <h3>FRC Kulübü</h3>
-          <p>FIRST Robotics Competition için endüstriyel robotlar inşa ediyor ve uluslararası arenada yarışıyoruz.</p>
+          <div class="team-row-focus">FIRST · Endüstriyel robotik</div>
+          <span class="team-row-arrow" aria-hidden="true">→</span>
         </a>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section class="section" id="projects" style="overflow:hidden;">
+  <section class="section" id="projects">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Öne Çıkan <span>Projeler</span></h2>
-        <div class="section-divider"></div>
-        <p>Takımlarımızın geliştirdiği projelerden bazıları.</p>
-      </div>
-      <div class="timeline-wrapper fade-in">
-        <button class="timeline-arrow timeline-arrow--left" aria-label="Geri">◀</button>
-        <div class="projects-scroll">
-          <div class="project-card fade-in" data-modal="modal-main-1">
-            <div class="project-image"><img src="ekg.webp" alt="EKG-Tarayıcı"></div>
-            <div class="project-info">
-              <span class="tag">Sağlıkta YZ</span>
-              <h3>EKG-Tarayıcı</h3>
-              <p>12 derivasyonlu EKG sinyallerinden aritmileri tespit eden hibrit derin öğrenme karar destek sistemi.</p>
-            </div>
+      <header class="sec-head">
+        <div class="sec-kicker">💡 — Projeler</div>
+        <h2>Öne çıkan <em>işler</em></h2>
+        <p class="sec-lede">Takımlarımızın geliştirdiği projelerden bazıları.</p>
+      </header>
+      <div class="proj-list">
+        <button class="proj-row reveal" style="--d:0" data-modal="modal-main-1" type="button">
+          <div class="proj-row-thumb"><img src="ekg.webp" alt="EKG-Tarayıcı"></div>
+          <div class="proj-row-name">
+            <span class="tag">Sağlıkta YZ</span>
+            <h3>EKG-Tarayıcı</h3>
           </div>
-          <div class="project-card fade-in" data-modal="modal-main-2">
-            <div class="project-image"><img src="lacin.jpeg" alt="LAÇİN"></div>
-            <div class="project-info">
-              <span class="tag">İHA</span>
-              <h3>LAÇİN</h3>
-              <p>Otonom uçuş ve yük bırakma kabiliyetine sahip İHA.</p>
-            </div>
+          <p class="proj-row-desc">12 derivasyonlu EKG sinyallerinden aritmileri tespit eden hibrit derin öğrenme karar destek sistemi.</p>
+          <span class="proj-row-more">İncele →</span>
+        </button>
+        <button class="proj-row reveal" style="--d:1" data-modal="modal-main-2" type="button">
+          <div class="proj-row-thumb"><img src="lacin.jpeg" alt="LAÇİN"></div>
+          <div class="proj-row-name">
+            <span class="tag">İHA</span>
+            <h3>LAÇİN</h3>
           </div>
-          <div class="project-card fade-in" data-modal="modal-main-3">
-            <div class="project-image"><img src="abra oyun.jpg" alt="AtomHeart Ant"></div>
-            <div class="project-info">
-              <span class="tag">Oyun</span>
-              <h3>AtomHeart Ant</h3>
-              <p>Microjam 54'te 48 saatte geliştirilen, tırmanma ve saldırı mekaniklerine sahip macera oyunu.</p>
-            </div>
+          <p class="proj-row-desc">Otonom uçuş ve yük bırakma kabiliyetine sahip, görev odaklı insansız hava aracı.</p>
+          <span class="proj-row-more">İncele →</span>
+        </button>
+        <button class="proj-row reveal" style="--d:2" data-modal="modal-main-3" type="button">
+          <div class="proj-row-thumb"><img src="abra oyun.jpg" alt="AtomHeart Ant"></div>
+          <div class="proj-row-name">
+            <span class="tag">Oyun</span>
+            <h3>AtomHeart Ant</h3>
           </div>
-          <div class="project-card fade-in" data-modal="modal-main-4">
-            <div class="project-image"><img src="havacilikyz.jpe" alt="BlackScope"></div>
-            <div class="project-info">
-              <span class="tag">Havacılıkta YZ</span>
-              <h3>BlackScope</h3>
-              <p>İHA kameralarından gelen video akışını gerçek zamanlı işleyen çoklu görevli yapay zeka sistemi.</p>
-            </div>
+          <p class="proj-row-desc">Microjam 54'te 48 saatte geliştirilen, tırmanma ve saldırı mekaniklerine sahip macera oyunu.</p>
+          <span class="proj-row-more">İncele →</span>
+        </button>
+        <button class="proj-row reveal" style="--d:3" data-modal="modal-main-4" type="button">
+          <div class="proj-row-thumb"><img src="havacilikyz.jpe" alt="BlackScope"></div>
+          <div class="proj-row-name">
+            <span class="tag">Havacılıkta YZ</span>
+            <h3>BlackScope</h3>
           </div>
-        </div>
-        <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
+          <p class="proj-row-desc">İHA kameralarından gelen video akışını gerçek zamanlı işleyen çoklu görevli yapay zeka sistemi.</p>
+          <span class="proj-row-more">İncele →</span>
+        </button>
       </div>
     </div>
   </section>
@@ -231,8 +244,8 @@
       <div class="project-modal-body">
         <span class="tag">Oyun</span>
         <h2>AtomHeart Ant</h2>
-        <p>Itch.io'da düzenlenen ve teması "büyük" olan Microjam 54'te 48 saat içerisinde şu ana kadar ki en tutkuyla yaptığımız oyun "AtomHeart Ant"'i tasarladık.</p>
-        <p>Oyunun bu sürümüyle birlikte tamamen yenilenmiş bir harita ve tırmanma, saldırı, zehirli asit, can barı, çift zıplama, checkpoint gibi farklı mekaniklerle oyunculara yeni bir deneyim sunarken oyunculara konsolla oynama seçeneği sunuyoruz.</p>
+        <p>Itch.io'da düzenlenen ve teması &ldquo;büyük&rdquo; olan Microjam 54'te 48 saat içerisinde tasarladığımız oyun &ldquo;AtomHeart Ant&rdquo;.</p>
+        <p>Oyunun bu sürümüyle birlikte tamamen yenilenmiş bir harita ve tırmanma, saldırı, zehirli asit, can barı, çift zıplama, checkpoint gibi farklı mekaniklerle oyunculara yeni bir deneyim sunarken konsolla oynama seçeneği sunuyoruz.</p>
         <a href="https://drive.google.com/file/d/1p6JCd9CzWktW1Z2Io3J0N7oC8uxtx7E8/view" target="_blank" class="github-link">İndir →</a>
       </div>
     </div>
@@ -240,7 +253,7 @@
   <div class="project-modal-overlay" id="modal-main-4">
     <div class="project-modal">
       <button class="project-modal-close">&times;</button>
-      <img class="project-modal-img" src="yz.png" alt="BlackScope">
+      <img class="project-modal-img" src="havacilikyz.jpe" alt="BlackScope">
       <div class="project-modal-body">
         <span class="tag">Havacılıkta YZ</span>
         <h2>BlackScope: İHA İçin Çoklu Görevli Yapay Zeka Sistemi</h2>
@@ -255,77 +268,74 @@
   <!-- Sponsors -->
   <section class="section section-dark" id="sponsors">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Sponsorlar</h2>
-        <div class="section-divider"></div>
-      </div>
-      <div style="text-align:center;padding:40px 0;">
-        <p style="color:rgba(255,255,255,0.5);font-size:1rem;">Şu anda sponsorumuz bulunmuyor. Destek olmak isterseniz bize ulaşın.</p>
+      <header class="sec-head">
+        <div class="sec-kicker">🤝 — Sponsorlar</div>
+        <h2>Destekçilerimiz</h2>
+      </header>
+      <div class="sponsor-line reveal" style="--d:1">
+        <p>Şu anda sponsorumuz bulunmuyor. Birlikte üretmek isterseniz bize ulaşın.</p>
+        <a href="mailto:capaprojetakimlari@gmail.com">Bize yazın →</a>
       </div>
     </div>
   </section>
 
   <!-- Achievements -->
-  <section class="section" id="achievements" style="overflow:hidden;">
+  <section class="section" id="achievements">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Başarılar</h2>
-        <div class="section-divider"></div>
-        <p>Yarışmalardan aldığımız dereceler ve kazandığımız ödüller.</p>
-      </div>
-      <div class="timeline-wrapper fade-in">
-        <button class="timeline-arrow timeline-arrow--left" aria-label="Geri">◀</button>
-        <div class="timeline-scroll">
-          <div class="timeline-card">
-            <div class="timeline-year">2026</div>
-            <div class="timeline-badge"><img src="yz.png" alt="YZ" style="width:48px;height:48px;object-fit:contain;display:block;margin:0 auto;"></div>
-            <div class="timeline-body">
-              <h4>TÜBİTAK 4006B</h4>
-              <p>Bilim Fuarı<br>Sergilenen Proje</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2026</div>
-            <div class="timeline-badge"><img src="iha.png" alt="ANKA" style="width:48px;height:48px;object-fit:contain;display:block;margin:0 auto;"></div>
-            <div class="timeline-body">
-              <h4>MEB Robot Yarışması</h4>
-              <p>18. Uluslararası<br>RC Sabit Kanat – Finalist</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2025</div>
-            <div class="timeline-badge"><img src="yz.png" alt="YZ" style="width:48px;height:48px;object-fit:contain;display:block;margin:0 auto;"></div>
-            <div class="timeline-body">
-              <h4>TÜBİTAK 4006B</h4>
-              <p>Bilim Fuarı<br>Sergilenen Proje</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2024</div>
-            <div class="timeline-badge"><img src="yz.png" alt="YZ" style="width:48px;height:48px;object-fit:contain;display:block;margin:0 auto;"></div>
-            <div class="timeline-body">
-              <h4>TEKNOFEST</h4>
-              <p>Doğal Dil İşleme<br>Yarışması Finali</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2024</div>
-            <div class="timeline-badge"><img src="iha.png" alt="ANKA" style="width:48px;height:48px;object-fit:contain;display:block;margin:0 auto;"></div>
-            <div class="timeline-body">
-              <h4>MEB Robot Yarışması</h4>
-              <p>16. Uluslararası<br>RC Sabit Kanat – 4.</p>
-            </div>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-year">2022</div>
-            <div class="timeline-badge"><img src="iha.png" alt="ANKA" style="width:48px;height:48px;object-fit:contain;display:block;margin:0 auto;"></div>
-            <div class="timeline-body">
-              <h4>TEKNOFEST</h4>
-              <p>Liseler Arası İHA<br>Yarışması Finalist</p>
-            </div>
+      <header class="sec-head">
+        <div class="sec-kicker">🏆 — Başarılar</div>
+        <h2>Yarışmalardan <em>dereceler</em></h2>
+        <p class="sec-lede">Yarışmalardan aldığımız dereceler ve kazandığımız ödüller.</p>
+      </header>
+      <div class="ach-list">
+        <div class="ach-row reveal" style="--d:0">
+          <div class="ach-year">2026</div>
+          <div class="ach-badge"><img src="yz.png" alt="YZ"></div>
+          <div class="ach-body">
+            <h4>TÜBİTAK 4006B</h4>
+            <p>Bilim Fuarı — Sergilenen Proje</p>
           </div>
         </div>
-        <button class="timeline-arrow timeline-arrow--right" aria-label="İleri">▶</button>
+        <div class="ach-row reveal" style="--d:1">
+          <div class="ach-year">2026</div>
+          <div class="ach-badge"><img src="iha.png" alt="ANKA"></div>
+          <div class="ach-body">
+            <h4>MEB Robot Yarışması</h4>
+            <p>18. Uluslararası — RC Sabit Kanat Finalist</p>
+          </div>
+        </div>
+        <div class="ach-row reveal" style="--d:2">
+          <div class="ach-year">2025</div>
+          <div class="ach-badge"><img src="yz.png" alt="YZ"></div>
+          <div class="ach-body">
+            <h4>TÜBİTAK 4006B</h4>
+            <p>Bilim Fuarı — Sergilenen Proje</p>
+          </div>
+        </div>
+        <div class="ach-row reveal" style="--d:3">
+          <div class="ach-year">2024</div>
+          <div class="ach-badge"><img src="yz.png" alt="YZ"></div>
+          <div class="ach-body">
+            <h4>TEKNOFEST</h4>
+            <p>Doğal Dil İşleme Yarışması Finali</p>
+          </div>
+        </div>
+        <div class="ach-row reveal" style="--d:4">
+          <div class="ach-year">2024</div>
+          <div class="ach-badge"><img src="iha.png" alt="ANKA"></div>
+          <div class="ach-body">
+            <h4>MEB Robot Yarışması</h4>
+            <p>16. Uluslararası — RC Sabit Kanat 4.</p>
+          </div>
+        </div>
+        <div class="ach-row reveal" style="--d:5">
+          <div class="ach-year">2022</div>
+          <div class="ach-badge"><img src="iha.png" alt="ANKA"></div>
+          <div class="ach-body">
+            <h4>TEKNOFEST</h4>
+            <p>Liseler Arası İHA Yarışması Finalist</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -333,18 +343,16 @@
   <!-- News -->
   <section class="section section-dark" id="news">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Son <span>Haberler</span></h2>
-        <div class="section-divider"></div>
-        <p>Topluluğumuzdan güncel gelişmeler.</p>
-      </div>
-      <div class="news-grid">
-        <div class="news-card fade-in" onclick="document.getElementById('news-modal-1').classList.add('active')" style="cursor:pointer;">
-          <div class="news-date">Eylül 2026</div>
-          <h3>2026-2027 Dönemi Üye Alımları Başlıyor</h3>
-          <p>Takımlarımıza katılmak isteyenler için tanıtım toplantıları başlıyor. Tarih ve detaylar için tıklayın.</p>
-        </div>
-      </div>
+      <header class="sec-head">
+        <div class="sec-kicker">📣 — Haberler</div>
+        <h2>Son <em>gelişmeler</em></h2>
+      </header>
+      <article class="news-feature reveal" style="--d:1" onclick="document.getElementById('news-modal-1').classList.add('active')">
+        <div class="news-feature-date">Eylül 2026</div>
+        <h3>2026-2027 Dönemi Üye Alımları Başlıyor</h3>
+        <p>Takımlarımıza katılmak isteyenler için tanıtım toplantıları başlıyor. Toplantı tarihleri ve detaylar için tıklayın.</p>
+        <span class="link-arrow">Detayları oku <span aria-hidden="true">→</span></span>
+      </article>
     </div>
   </section>
 
@@ -356,13 +364,13 @@
         <span class="tag">Eylül 2026</span>
         <h2>2026-2027 Dönemi Üye Alımları Başlıyor</h2>
         <p>Takımlarımıza katılmak isteyenler için tanıtım toplantıları düzenleniyor. Aşağıdaki tarihlerde ilgili takımın toplantısına katılabilirsin:</p>
-        <ul style="margin-top:12px;font-size:0.95rem;line-height:1.8;">
-          <li><strong>FRC & Abra Games</strong> — 16 Eylül Çarşamba, öğle arası</li>
+        <ul style="margin-top:14px;font-size:0.95rem;line-height:2;color:var(--ink-soft);">
+          <li><strong>FRC &amp; Abra Games</strong> — 16 Eylül Çarşamba, öğle arası</li>
           <li><strong>Darülmu-AI-limîn</strong> — 17 Eylül Perşembe, okul çıkışı</li>
           <li><strong>ANKA</strong> — 21 Eylül Pazartesi, okul çıkışı</li>
           <li><strong>Rok-Et</strong> — 22 Eylül Salı, okul çıkışı</li>
         </ul>
-        <p style="margin-top:12px;">Toplantılarda takımlarımız hakkında detaylı bilgi alabilir, merak ettiklerinizi sorabilir ve kayıt sürecini başlatabilirsin.</p>
+        <p style="margin-top:14px;">Toplantılarda takımlarımız hakkında detaylı bilgi alabilir, merak ettiklerinizi sorabilir ve kayıt sürecini başlatabilirsiniz.</p>
       </div>
     </div>
   </div>
@@ -370,46 +378,52 @@
   <!-- Gallery -->
   <section class="section" id="gallery">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Galeri</h2>
-        <div class="section-divider"></div>
-        <p>Etkinliklerimizden, yarışmalarımızdan ve çalışmalarımızdan kareler.</p>
-      </div>
+      <header class="sec-head">
+        <div class="sec-kicker">📸 — Galeri</div>
+        <h2>Çalışmalardan <em>kareler</em></h2>
+        <p class="sec-lede">Etkinliklerimizden, yarışmalarımızdan ve çalışmalarımızdan anlar.</p>
+      </header>
       <div class="gallery-grid">
-        <div class="gallery-item fade-in" onclick="openLightbox(this)"><img src="pages/galeri/cptt galeri ana foto.jpeg" alt="ÇPTT"></div>
-        <div class="gallery-item fade-in" onclick="openLightbox(this)"><img src="pages/galeri/anka (1).jpeg" alt="ANKA"></div>
-        <div class="gallery-item fade-in" onclick="openLightbox(this)"><img src="pages/galeri/anka (2).jpeg" alt="ANKA"></div>
-        <div class="gallery-item fade-in" onclick="openLightbox(this)"><img src="pages/galeri/frc.jpeg" alt="FRC"></div>
-        <div class="gallery-item fade-in" onclick="openLightbox(this)"><img src="pages/galeri/yz.jpg" alt="YZ"></div>
-        <div class="gallery-item fade-in" onclick="openLightbox(this)"><img src="pages/galeri/abra (1).jpeg" alt="Abra Games"></div>
-        <div class="gallery-item fade-in" onclick="openLightbox(this)"><img src="pages/galeri/abra (2).jpeg" alt="Abra Games"></div>
+        <div class="gallery-item gallery-item--lead reveal" style="--d:0" onclick="openLightbox(this)"><img src="pages/galeri/cptt galeri ana foto.jpeg" alt="ÇPTT"></div>
+        <div class="gallery-item reveal" style="--d:1" onclick="openLightbox(this)"><img src="pages/galeri/anka (1).jpeg" alt="ANKA"></div>
+        <div class="gallery-item reveal" style="--d:2" onclick="openLightbox(this)"><img src="pages/galeri/anka (2).jpeg" alt="ANKA"></div>
+        <div class="gallery-item reveal" style="--d:3" onclick="openLightbox(this)"><img src="pages/galeri/yz.jpg" alt="YZ"></div>
+        <div class="gallery-item reveal" style="--d:4" onclick="openLightbox(this)"><img src="pages/galeri/frc.jpeg" alt="FRC"></div>
+        <div class="gallery-item gallery-item--b2 reveal" style="--d:5" onclick="openLightbox(this)"><img src="pages/galeri/abra (1).jpeg" alt="Abra Games"></div>
+        <div class="gallery-item gallery-item--b2 reveal" style="--d:6" onclick="openLightbox(this)"><img src="pages/galeri/abra (2).jpeg" alt="Abra Games"></div>
       </div>
     </div>
   </section>
 
-  <!-- Join Info -->
+  <!-- Join -->
   <section class="section section-dark" id="nasil-katilirim">
     <div class="container">
-      <div class="section-header fade-in">
-        <h2>Nasıl <span>Katılırım?</span></h2>
-        <div class="section-divider"></div>
-        <p>Topluluğumuza katılmak için takip etmen gereken adımlar.</p>
-      </div>
-      <div class="join-info-grid">
-        <div class="join-card fade-in">
-          <div class="join-card-icon">📞</div>
-          <h3>Bilgi Al</h3>
-          <p>Takımlarımıza sosyal medya ve mail aracılığıyla ulaşıp bilgi alabilirsin.</p>
+      <header class="sec-head">
+        <div class="sec-kicker">✨ — Katıl</div>
+        <h2>Nasıl <em>katılırım?</em></h2>
+        <p class="sec-lede">Topluluğumuza katılmak için takip etmen gereken adımlar.</p>
+      </header>
+      <div class="steps">
+        <div class="step reveal" style="--d:0">
+          <div class="step-num">💬</div>
+          <div class="step-body">
+            <h3>Bilgi Al</h3>
+            <p>Takımlarımıza sosyal medya ve mail aracılığıyla ulaşıp bilgi alabilirsin.</p>
+          </div>
         </div>
-        <div class="join-card fade-in">
-          <div class="join-card-icon">📅</div>
-          <h3>Tanıtım Toplantıları</h3>
-          <p>Okulda düzenlenecek olan takım toplantılarına katıl.</p>
+        <div class="step reveal" style="--d:1">
+          <div class="step-num">🎤</div>
+          <div class="step-body">
+            <h3>Tanıtım Toplantıları</h3>
+            <p>Okulda düzenlenecek olan takım toplantılarına katıl.</p>
+          </div>
         </div>
-        <div class="join-card fade-in">
-          <div class="join-card-icon">🎓</div>
-          <h3>Eğitimlere Katıl</h3>
-          <p>Kulüplerimizin düzenlediği eğitimlere katılarak kendini geliştirebilir ve takım çalışmalarına aktif olarak katkı sağlamaya başlayabilirsin.</p>
+        <div class="step reveal" style="--d:2">
+          <div class="step-num">🎓</div>
+          <div class="step-body">
+            <h3>Eğitimlere Katıl</h3>
+            <p>Kulüplerimizin düzenlediği eğitimlere katılarak kendini geliştirebilir ve takım çalışmalarına aktif olarak katkı sağlamaya başlayabilirsin.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -418,9 +432,9 @@
   <!-- Footer -->
   <footer class="footer" id="contact">
     <div class="container">
-      <div class="footer-grid">
+      <div class="footer-top">
         <div class="footer-brand">
-          <h3>Çapa Proje <span>Takımları</span> Topluluğu</h3>
+          <h3>Çapa Proje <em>Takımları</em> Topluluğu</h3>
           <p>Çapa Fen Lisesi bünyesinde teknoloji, bilim ve üretim için bir aradayız.</p>
           <div class="footer-social">
             <a href="https://www.instagram.com/capaprojetakimlari/?hl=tr" target="_blank" title="Instagram"><img src="Instagram_logo_2022.svg" alt="Instagram"></a>
@@ -428,7 +442,7 @@
             <a href="mailto:capaprojetakimlari@gmail.com" title="E-posta"><img src="Gmail_icon_(2026).svg.webp" alt="Mail"></a>
           </div>
         </div>
-        <div>
+        <div class="footer-column">
           <h4>Takımlar</h4>
           <ul class="footer-links">
             <li><a href="/darulmu-AI-limin">Yapay Zeka Kulübü</a></li>
@@ -438,26 +452,28 @@
             <li><a href="/frc">FRC Kulübü</a></li>
           </ul>
         </div>
-        <div>
+        <div class="footer-column">
           <h4>Hızlı Bağlantılar</h4>
           <ul class="footer-links">
             <li><a href="#about">Hakkımızda</a></li>
             <li><a href="#projects">Projeler</a></li>
             <li><a href="#achievements">Başarılar</a></li>
             <li><a href="#gallery">Galeri</a></li>
+            <li><a href="#nasil-katilirim">Katıl</a></li>
           </ul>
         </div>
-          <div>
-            <h4>İletişim</h4>
-            <ul class="footer-links">
-              <li><a href="mailto:capaprojetakimlari@gmail.com"><img src="Gmail_icon_(2026).svg.webp" alt="Mail" style="width:20px;height:20px;border-radius:4px;margin-right:8px;">Mail</a></li>
-              <li><a href="https://www.instagram.com/capaprojetakimlari/?hl=tr" target="_blank"><img src="Instagram_logo_2022.svg" alt="Instagram" style="width:20px;height:20px;border-radius:4px;margin-right:8px;">Instagram</a></li>
-              <li><a href="https://www.youtube.com/@%C3%87apaProjeTak%C4%B1mlar%C4%B1" target="_blank"><img src="YouTube_full-color_icon_(2017).svg.webp" alt="YouTube" style="width:20px;height:20px;border-radius:4px;margin-right:8px;">YouTube</a></li>
-            </ul>
-          </div>
+        <div class="footer-column">
+          <h4>İletişim</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:capaprojetakimlari@gmail.com"><img src="Gmail_icon_(2026).svg.webp" alt="Mail">Mail</a></li>
+            <li><a href="https://www.instagram.com/capaprojetakimlari/?hl=tr" target="_blank"><img src="Instagram_logo_2022.svg" alt="Instagram">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@%C3%87apaProjeTak%C4%B1mlar%C4%B1" target="_blank"><img src="YouTube_full-color_icon_(2017).svg.webp" alt="YouTube">YouTube</a></li>
+          </ul>
+        </div>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Çapa Proje Takımları Topluluğu. Tüm hakları saklıdır.</p>
+        <span class="mono">İstanbul — 2026</span>
       </div>
     </div>
   </footer>

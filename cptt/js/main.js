@@ -14,16 +14,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Scroll fade-in animations
-  const observer = new IntersectionObserver((entries) => {
+  // Hero entrance — clip reveal plays once on load
+  window.addEventListener('load', () => {
+    document.body.classList.add('is-loaded');
+  });
+  // Fallback in case 'load' already fired
+  if (document.readyState === 'complete') {
+    document.body.classList.add('is-loaded');
+  }
+
+  // Role-based scroll reveals: default / slide / clip
+  const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  document.querySelectorAll('.reveal, .reveal-slide, .reveal-clip, .fade-in')
+    .forEach(el => revealObserver.observe(el));
+
+  // Fallback: force-reveal everything after 1.5s in case observer doesn't fire
+  setTimeout(() => {
+    document.querySelectorAll('.reveal, .reveal-slide, .reveal-clip, .fade-in')
+      .forEach(el => el.classList.add('visible'));
+  }, 1500);
 
   // Counter animation
   const counters = document.querySelectorAll('.stat-number[data-target]');
@@ -41,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   counters.forEach(el => counterObserver.observe(el));
 
   function animateCounter(el, target) {
-    const duration = 2000;
+    const duration = 1100;
     const start = performance.now();
 
     function update(currentTime) {
@@ -61,15 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(update);
   }
 
-  // Smooth reveal for team cards stagger
-  const teamCards = document.querySelectorAll('.team-card');
-  teamCards.forEach((card, i) => {
+  // Smooth reveal stagger for legacy team cards (sub pages)
+  document.querySelectorAll('.team-card').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.08}s`;
   });
 
-  // Timeline + Projects scroll arrows
-  const scrollWrappers = document.querySelectorAll('.timeline-wrapper');
-  scrollWrappers.forEach(wrapper => {
+  // Timeline + Projects scroll arrows (sub pages)
+  document.querySelectorAll('.timeline-wrapper').forEach(wrapper => {
     const scroll = wrapper.querySelector('.timeline-scroll') || wrapper.querySelector('.projects-scroll');
     const leftBtn = wrapper.querySelector('.timeline-arrow--left');
     const rightBtn = wrapper.querySelector('.timeline-arrow--right');
@@ -83,10 +98,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Project modal
-  document.querySelectorAll('.project-card[data-modal]').forEach(card => {
-    card.addEventListener('click', () => {
-      const modalId = card.getAttribute('data-modal');
+  // Project modal — triggers on cards and editorial rows
+  document.querySelectorAll('[data-modal]').forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      const modalId = trigger.getAttribute('data-modal');
       const overlay = document.getElementById(modalId);
       if (overlay) overlay.classList.add('active');
     });
