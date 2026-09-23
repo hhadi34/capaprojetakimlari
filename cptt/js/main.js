@@ -140,18 +140,23 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
 }
 
-async function shareNews(title) {
+function shareNews(title) {
   const url = window.location.href;
+  const text = title + '\n' + url;
+
   if (navigator.share) {
-    try {
-      await navigator.share({ title, text: title, url });
-    } catch (e) { /* user cancelled */ }
-  } else {
-    try {
-      await navigator.clipboard.writeText(url);
-      alert('Bağlantı kopyalandı!');
-    } catch (e) {
-      window.open('https://wa.me/?text=' + encodeURIComponent(title + ' ' + url), '_blank');
-    }
+    navigator.share({ title: title, text: title, url: url }).catch(function(){});
+    return;
   }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(function(){
+      alert('Bağlantı kopyalandı! Paylaşmak istediğiniz yere yapıştırabilirsiniz.');
+    }).catch(function(){
+      prompt('Bağlantıyı kopyalayın:', url);
+    });
+    return;
+  }
+
+  prompt('Bağlantıyı kopyalayın:', url);
 }
