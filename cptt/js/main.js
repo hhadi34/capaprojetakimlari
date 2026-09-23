@@ -139,3 +139,19 @@ function openLightbox(el) {
 function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
 }
+
+async function shareNews(title) {
+  const url = window.location.href;
+  if (navigator.share) {
+    try {
+      await navigator.share({ title, text: title, url });
+    } catch (e) { /* user cancelled */ }
+  } else {
+    try {
+      await navigator.clipboard.writeText(url);
+      alert('Bağlantı kopyalandı!');
+    } catch (e) {
+      window.open('https://wa.me/?text=' + encodeURIComponent(title + ' ' + url), '_blank');
+    }
+  }
+}

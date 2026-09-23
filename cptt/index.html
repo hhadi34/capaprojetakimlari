@@ -347,16 +347,30 @@
         <div class="sec-kicker">📣 — Haberler</div>
         <h2>Son <em>gelişmeler</em></h2>
       </header>
-      <article class="news-feature reveal" style="--d:1" onclick="document.getElementById('news-modal-1').classList.add('active')">
-        <div class="news-feature-date">Eylül 2026</div>
-        <h3>2026-2027 Dönemi Üye Alımları Başlıyor</h3>
-        <p>Takımlarımıza katılmak isteyenler için tanıtım toplantıları başlıyor. Toplantı tarihleri ve detaylar için tıklayın.</p>
-        <span class="link-arrow">Detayları oku <span aria-hidden="true">→</span></span>
-      </article>
+      <div class="news-list">
+        <article class="news-feature reveal" style="--d:0" onclick="document.getElementById('news-modal-2').classList.add('active')">
+          <div class="news-feature-date">22 Eylül 2026</div>
+          <h3>Toplantılar Tamamlandı</h3>
+          <p>Beş takımın tanıtım toplantıları başarıyla tamamlandı. Detaylar ve fotoğraflar için tıklayın.</p>
+          <div class="news-feature-footer">
+            <span class="link-arrow">Detayları oku <span aria-hidden="true">→</span></span>
+            <button class="news-share" onclick="event.stopPropagation(); shareNews('Toplantılar Tamamlandı — Çapa Proje Takımları')" title="Paylaş">📤</button>
+          </div>
+        </article>
+        <article class="news-feature reveal" style="--d:1" onclick="document.getElementById('news-modal-1').classList.add('active')">
+          <div class="news-feature-date">Eylül 2026</div>
+          <h3>2026-2027 Dönemi Üye Alımları Başlıyor</h3>
+          <p>Takımlarımıza katılmak isteyenler için tanıtım toplantıları başlıyor. Toplantı tarihleri ve detaylar için tıklayın.</p>
+          <div class="news-feature-footer">
+            <span class="link-arrow">Detayları oku <span aria-hidden="true">→</span></span>
+            <button class="news-share" onclick="event.stopPropagation(); shareNews('2026-2027 Dönemi Üye Alımları — Çapa Proje Takımları')" title="Paylaş">📤</button>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- News Modal -->
+  <!-- News Modal 1 — Üye Alımları -->
   <div class="project-modal-overlay" id="news-modal-1">
     <div class="project-modal">
       <button class="project-modal-close">&times;</button>
@@ -366,11 +380,32 @@
         <p>Takımlarımıza katılmak isteyenler için tanıtım toplantıları düzenleniyor. Aşağıdaki tarihlerde ilgili takımın toplantısına katılabilirsin:</p>
         <ul style="margin-top:14px;font-size:0.95rem;line-height:2;color:var(--ink-soft);">
           <li><strong>FRC &amp; Abra Games</strong> — 16 Eylül Çarşamba, öğle arası</li>
-          <li><strong>Darülmu-AI-limîn</strong> — 17 Eylül Perşembe, okul çıkışı</li>
+          <li><strong>Darülmu-AI-limin</strong> — 17 Eylül Perşembe, okul çıkışı</li>
           <li><strong>ANKA</strong> — 21 Eylül Pazartesi, okul çıkışı</li>
           <li><strong>Rok-Et</strong> — 22 Eylül Salı, okul çıkışı</li>
         </ul>
         <p style="margin-top:14px;">Toplantılarda takımlarımız hakkında detaylı bilgi alabilir, merak ettiklerinizi sorabilir ve kayıt sürecini başlatabilirsiniz.</p>
+        <button class="news-share news-share--modal" onclick="shareNews('2026-2027 Dönemi Üye Alımları — Çapa Proje Takımları')">📤 Paylaş</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- News Modal 2 — Toplantılar Tamamlandı -->
+  <div class="project-modal-overlay" id="news-modal-2">
+    <div class="project-modal">
+      <button class="project-modal-close">&times;</button>
+      <div class="project-modal-body">
+        <span class="tag">22 Eylül 2026</span>
+        <h2>Toplantılar Tamamlandı</h2>
+        <p>Beş takımımızın tanıtım toplantıları başarıyla tamamlandı. Toplantılarda takım faaliyetleri, projeler ve üyelik süreçleri anlatıldı.</p>
+        <div class="news-images">
+          <img src="tanitimhaber.jpeg" alt="Tanıtım Toplantısı" onclick="openLightbox(this)">
+          <img src="tanitimhaber1.jpeg" alt="Tanıtım Toplantısı" onclick="openLightbox(this)">
+          <img src="tanitimhaber2.jpeg" alt="Tanıtım Toplantısı" onclick="openLightbox(this)">
+          <img src="tanitimhaber3.png" alt="Tanıtım Toplantısı" onclick="openLightbox(this)">
+        </div>
+        <p style="margin-top:14px;">Toplantılara katılan tüm öğrencilere teşekkür ederiz. Henüz katılamayanlar için takımlarımızla iletişime geçebilirsiniz.</p>
+        <button class="news-share news-share--modal" onclick="shareNews('Toplantılar Tamamlandı — Çapa Proje Takımları')">📤 Paylaş</button>
       </div>
     </div>
   </div>

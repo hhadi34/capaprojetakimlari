@@ -894,6 +894,70 @@ ul { list-style: none; }
 .news-feature .link-arrow { color: var(--accent); }
 .news-feature .link-arrow::after { background: rgba(var(--accent-rgb), 0.3); }
 
+.news-list { display: grid; gap: 20px; }
+
+.news-feature-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.news-share {
+  background: none;
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: var(--transition-fast);
+  line-height: 1;
+}
+
+.news-share:hover {
+  background: rgba(var(--accent-rgb), 0.12);
+  border-color: var(--accent);
+  transform: scale(1.1);
+}
+
+.news-share--modal {
+  width: auto;
+  height: auto;
+  border-radius: 24px;
+  padding: 10px 22px;
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+  gap: 8px;
+  margin-top: 22px;
+}
+
+.news-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.news-images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--hairline-light);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.news-images img:hover {
+  transform: scale(1.02);
+  border-color: var(--accent);
+}
+
 /* ============================================================
    GALLERY — asymmetric editorial bento (main page)
    ============================================================ */
