@@ -140,23 +140,45 @@ function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
 }
 
-function shareNews(title) {
+function shareNews(title, evt) {
+  if (evt) { evt.preventDefault(); evt.stopPropagation(); }
   const url = window.location.href;
-  const text = title + '\n' + url;
+  const shareData = { title: title, text: title + '\n' + url, url: url };
 
+  // 1. Native share (works on mobile with HTTPS)
   if (navigator.share) {
-    navigator.share({ title: title, text: title, url: url }).catch(function(){});
+    navigator.share(shareData).catch(function(){});
     return;
   }
 
+  // 2. Clipboard copy
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(url).then(function(){
-      alert('Bağlantı kopyalandı! Paylaşmak istediğiniz yere yapıştırabilirsiniz.');
+      alert('Bağlantı kopyalandı!');
     }).catch(function(){
-      prompt('Bağlantıyı kopyalayın:', url);
+      fallbackShare(url);
     });
     return;
   }
 
-  prompt('Bağlantıyı kopyalayın:', url);
+  fallbackShare(url);
+}
+
+function fallbackShare(url) {
+  // WhatsApp fallback — works everywhere
+  const ua = navigator.userAgent.toLowerCase();
+  if (ua.includes('android') || ua.includes('iphone') || ua.includes('ipad')) {
+    if (confirm('Paylaşmak için WhatsApp açılsın mı?')) {
+      window.open('https://wa.me/?text=' + encodeURIComponent(url), '_blank');
+      return;
+    }
+  }
+  // Last resort
+  const input = document.createElement('input');
+  input.value = url;
+  document.body.appendChild(input);
+  input.select();
+  document.execCommand('copy');
+  document.body.removeChild(input);
+  alert('Bağlantı kopyalandı!');
 }

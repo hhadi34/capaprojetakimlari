@@ -354,7 +354,7 @@
           <p>Beş takımın tanıtım toplantıları başarıyla tamamlandı. Detaylar ve fotoğraflar için tıklayın.</p>
           <div class="news-feature-footer">
             <span class="link-arrow">Detayları oku <span aria-hidden="true">→</span></span>
-            <button class="news-share" onclick="event.stopPropagation(); shareNews('Toplantılar Tamamlandı — Çapa Proje Takımları')" title="Paylaş">📤</button>
+            <button class="news-share" onclick="shareNews('Toplantılar Tamamlandı — Çapa Proje Takımları', event)" title="Paylaş">📤</button>
           </div>
         </article>
         <article class="news-feature reveal" style="--d:1" onclick="document.getElementById('news-modal-1').classList.add('active')">
@@ -363,7 +363,7 @@
           <p>Takımlarımıza katılmak isteyenler için tanıtım toplantıları başlıyor. Toplantı tarihleri ve detaylar için tıklayın.</p>
           <div class="news-feature-footer">
             <span class="link-arrow">Detayları oku <span aria-hidden="true">→</span></span>
-            <button class="news-share" onclick="event.stopPropagation(); shareNews('2026-2027 Dönemi Üye Alımları — Çapa Proje Takımları')" title="Paylaş">📤</button>
+            <button class="news-share" onclick="shareNews('2026-2027 Dönemi Üye Alımları — Çapa Proje Takımları', event)" title="Paylaş">📤</button>
           </div>
         </article>
       </div>
@@ -385,7 +385,7 @@
           <li><strong>Rok-Et</strong> — 22 Eylül Salı, okul çıkışı</li>
         </ul>
         <p style="margin-top:14px;">Toplantılarda takımlarımız hakkında detaylı bilgi alabilir, merak ettiklerinizi sorabilir ve kayıt sürecini başlatabilirsiniz.</p>
-        <button class="news-share news-share--modal" onclick="shareNews('2026-2027 Dönemi Üye Alımları — Çapa Proje Takımları')">📤 Paylaş</button>
+        <button class="news-share news-share--modal" onclick="shareNews('2026-2027 Dönemi Üye Alımları — Çapa Proje Takımları', event)">📤 Paylaş</button>
       </div>
     </div>
   </div>
@@ -405,7 +405,7 @@
           <img src="tanitimhaber3.png" alt="Tanıtım Toplantısı" onclick="openLightbox(this)">
         </div>
         <p style="margin-top:14px;">Toplantılara katılan tüm öğrencilere teşekkür ederiz. Henüz katılamayanlar için takımlarımızla iletişime geçebilirsiniz.</p>
-        <button class="news-share news-share--modal" onclick="shareNews('Toplantılar Tamamlandı — Çapa Proje Takımları')">📤 Paylaş</button>
+        <button class="news-share news-share--modal" onclick="shareNews('Toplantılar Tamamlandı — Çapa Proje Takımları', event)">📤 Paylaş</button>
       </div>
     </div>
   </div>
